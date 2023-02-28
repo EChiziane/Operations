@@ -1,0 +1,62 @@
+<app-title [titulo]="'Bilhete de Identidade'"></app-title>
+<div class="form-inline">
+  <div class="form-control mr-2"
+       placeholder="buscar"
+       type="text"
+
+  >
+
+  </div>
+</div>
+
+<table class="table table-striped">
+
+  <thead class="thead-dark">
+  <tr>
+    <th>#</th>
+    <th>Code</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Number</th>
+    <th>Date</th>
+    <th>Opcoes</th>
+    <th></th>
+  </tr>
+  </thead>
+
+  <tbody *ngIf="bilhetesIdentidade && bilhetesIdentidade.length">
+  <tr *ngFor="let bilheteidentidade of bilhetesIdentidade">
+    <td>"ID"</td>
+    <td>"00011"</td>
+    <td>{{bilheteidentidade.first_name}}</td>
+    <td>{{bilheteidentidade.last_name}}</td>
+    <td>{{bilheteidentidade.numberId}}</td>
+    <td>{{bilheteidentidade.dateTime}}</td>
+    <td>
+      <button class="btn btns-primary btn-sm mr-2" tooltip="Editar" type="button">
+        <i class="fa fa-edit"></i>
+      </button>
+      <button class="btn btn-danger btn-sm" tooltip="Excluir" type="button">
+        <i class="fa fa-trash"></i>
+      </button>
+    </td>
+  </tr>
+
+  </tbody>
+  <tfoot *ngIf="!bilhetesIdentidade.length">
+  <tr>
+    <td class="text-center" colspan="8">
+      <h4>Nenhum Bilhete de Identidade</h4>
+    </td>
+  </tr>
+  </tfoot>
+
+</table>
+
+<ng-template #template>
+  <div class="modal-body text-center">
+    <p>Tem certeza que quer deletar este User?</p>
+    <button class="btn btn-default" type="button">Sim</button>
+    <button class="btn btn-primary" type="button">Não</button>
+  </div>
+</ng-template>

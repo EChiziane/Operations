@@ -1,0 +1,113 @@
+
+<app-title [titulo]="'Users'"></app-title>
+<div class="form-inline">
+  <div class="form-group mb-2">
+    <label class="mr-2">Filtro: </label>
+    <input
+      [(ngModel)]="filtroLista"
+      class="form-control mr-2"
+      placeholder="buscar"
+      type="text"
+    >
+  </div>
+</div>
+
+<div>
+  <input
+    type="button"
+    value="Nova Operacao"
+    (click)="openModal(template2)">
+</div>
+<table class="table table-striped">
+  <thead class="thead-dark">
+  <tr>
+    <th>#</th>
+    <th>Code</th>
+    <th>Type</th>
+    <th>Detalhes</th>
+    <th>Date</th>
+    <th>Montante</th>
+    <th>Saldo</th>
+
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody *ngIf="operations && operations.length">
+  <tr *ngFor="let operation of operationsFiltrados">
+
+    <td>{{operation.id}}</td>
+    <td>{{operation.key}}</td>
+    <td>{{operation.operationType.description}}</td>
+    <td>{{operation.description}}</td>
+    <td>{{operation.date}}</td>
+    <td>{{operation.value}}</td>
+    <th>"200$"</th>
+
+    <td>
+      <button class="btn btn-primary btn-sm mr-2" tooltip="Editar" type="button">
+        <i class="fa fa-edit"></i>
+      </button>
+      <button (click)="openModal(template)" class="btn btn-danger b tn-sm" tooltip="Excluir" type="button">
+        <i class="fa fa-trash"></i>
+      </button>
+    </td>
+  </tr>
+  </tbody>
+  <tfoot *ngIf="!operations.length">
+  <tr>
+    <td class="text-center" colspan="8">
+      <h4>Nenhum evento encontrado!</h4>
+    </td>
+  </tr>
+  </tfoot>
+</table>
+
+<ng-template #template>
+  <div class="modal-body text-center">
+    <p>Tem certeza que quer deletar este User?</p>
+    <button (click)="confirm()" class="btn btn-default" type="button">Sim</button>
+    <button (click)="decline()" class="btn btn-primary" type="button">Não</button>
+  </div>
+</ng-template>
+
+
+<ng-template #template1>
+
+  <div class="modal-body text-center">
+    <p>Tem certeza que quer deletar este User?</p>
+    <button (click)="confirm()" class="btn btn-default" type="button">Sim</button>
+    <button (click)="decline()" class="btn btn-primary" type="button">Não</button>
+  </div>
+</ng-template>
+
+<ng-template #template2>
+  <div class="container">
+    <header>
+    <h4>Cria uma Nova operacao</h4>
+    </header>
+    <div>
+      Escolha o tipo de Operacao
+      <select>
+        <option >Seleciona uma opcao</option>
+        <option >Deposito</option>
+        <option >Debito</option>
+
+      </select>
+    </div>
+
+    <div>
+      Insira o Montante
+      <input type="number">
+    </div>
+
+    <div>
+      Detalhes
+      <input type="text">
+    </div>
+<br>
+    <input type="submit" value="Submeter">
+
+  </div>
+
+</ng-template>
+

@@ -1,0 +1,56 @@
+<app-title [titulo]="'Users'"></app-title>
+<div class="form-inline">
+  <div class="form-group mb-2">
+    <label class="mr-2">Filtro: </label>
+    <input
+      [(ngModel)]="filtroLista"
+      class="form-control mr-2"
+      placeholder="buscar"
+      type="text"
+    >
+  </div>
+</div>
+
+
+<table class="table table-striped">
+  <thead class="thead-dark">
+  <tr>
+    <th>#</th>
+    <th>Code</th>
+    <th>Name</th>
+    <th>Opções</th>
+  </tr>
+  </thead>
+  <tbody *ngIf="users && users.length">
+  <tr *ngFor="let user of usersFiltrados">
+
+    <td>"ID"</td>
+    <td>{{user.code}}</td>
+    <td>{{user.name}}</td>
+    <td>
+      <button class="btn btn-primary btn-sm mr-2" tooltip="Editar" type="button">
+        <i class="fa fa-edit"></i>
+      </button>
+      <button (click)="openModal(template)" class="btn btn-danger b tn-sm" tooltip="Excluir" type="button">
+        <i class="fa fa-trash"></i>
+      </button>
+    </td>
+  </tr>
+  </tbody>
+  <tfoot *ngIf="!users.length">
+  <tr>
+    <td class="text-center" colspan="8">
+      <h4>Nenhum evento encontrado!</h4>
+    </td>
+  </tr>
+  </tfoot>
+</table>
+
+
+<ng-template #template>
+  <div class="modal-body text-center">
+    <p>Tem certeza que quer deletar este User?</p>
+    <button (click)="confirm()" class="btn btn-default" type="button">Sim</button>
+    <button (click)="decline()" class="btn btn-primary" type="button">Não</button>
+  </div>
+</ng-template>

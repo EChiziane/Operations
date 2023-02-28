@@ -1,0 +1,29 @@
+input{
+  outline: none;
+  border-radius: 10px;
+  width: 100%;
+}
+input[type="submit"]{
+  padding: 10px;
+
+}
+header{
+  text-align: center;
+margin-bottom: 8%;
+}
+
+ input::-webkit-inner-spin-button,
+ input::-webkit-outer-spin-button{
+  display: none;
+}
+
+.container{
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+select{
+  outline: none;
+  width: 100%;
+}

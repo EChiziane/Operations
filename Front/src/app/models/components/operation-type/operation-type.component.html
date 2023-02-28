@@ -1,0 +1,49 @@
+<app-title [titulo]="'Operation Type'"></app-title>
+<div class="form-inline">
+  <div class="form-group mb-2">
+    <label class="mr-2">Filtro: </label>
+    <input
+      [(ngModel)]="filtroLista"
+      class="form-control mr-2"
+      placeholder="buscar"
+      type="text"
+    >
+  </div>
+</div>
+
+
+<table class="table table-striped">
+  <thead class="thead-dark">
+  <tr>
+    <th>#</th>
+    <th>Code</th>
+    <th>Description</th>
+    <th>Created Date</th>
+    <th>Opções</th>
+  </tr>
+  </thead>
+  <tbody *ngIf="operationTypes && operationTypesFiltrados.length">
+  <tr *ngFor="let operationType of operationTypesFiltrados">
+
+    <td>"ID"</td>
+    <td>{{operationType.code}}</td>
+    <td>{{operationType.description}}</td>
+    <td>"Unknow"</td>
+    <td>
+      <button class="btn btn-primary btn-sm mr-2" tooltip="Editar" type="button">
+        <i class="fa fa-edit"></i>
+      </button>
+      <button class="btn btn-danger btn-sm" tooltip="Excluir" type="button">
+        <i class="fa fa-trash"></i>
+      </button>
+    </td>
+  </tr>
+  </tbody>
+  <tfoot *ngIf="!operationTypes.length">
+  <tr>
+    <td class="text-center" colspan="8">
+      <h4>Nenhum evento encontrado!</h4>
+    </td>
+  </tr>
+  </tfoot>
+</table>
