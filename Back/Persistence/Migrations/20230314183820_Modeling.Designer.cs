@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Persistence.Contextos;
 
 namespace Persistence.Migrations
 {
     [DbContext(typeof(OperationContext))]
-    partial class OperationContextModelSnapshot : ModelSnapshot
+    [Migration("20230314183820_Modeling")]
+    partial class Modeling
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

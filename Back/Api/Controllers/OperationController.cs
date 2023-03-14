@@ -6,9 +6,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
-{ [ApiController]
+{
+    [ApiController]
     [Route("api/[controller]")]
-    public class OperationController:ControllerBase
+    public class OperationController : ControllerBase
     {
         private readonly IOperationService _operationService;
 
@@ -28,10 +29,9 @@ namespace Api.Controllers
             }
             catch (Exception e)
             {
-                return this.StatusCode(StatusCodes.Status500InternalServerError,
+                return StatusCode(StatusCodes.Status500InternalServerError,
                     $"Erro ao Tentar Adicionar essa Operacao. Erro :{e.Message}");
             }
-            
         }
 
         [HttpGet]
@@ -45,7 +45,7 @@ namespace Api.Controllers
             }
             catch (Exception e)
             {
-                return this.StatusCode(StatusCodes.Status500InternalServerError,
+                return StatusCode(StatusCodes.Status500InternalServerError,
                     $"Erro ao tentar capturar as Operacoes. Erro:{e.Message}");
             }
         }

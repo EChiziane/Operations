@@ -17,5 +17,11 @@ namespace Persistence.Contextos
         public DbSet<OperationType> OperationTypes { get; set; }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Material> Materials { get; set; }
+        public DbSet<MaterialType> MaterialTypes { get; set; }
+        public DbSet<Destination> Destinations { get; set; }
+        public DbSet<Driver> Drivers { get; set; }
+        public DbSet<Client> Clients { get; set; }
+        public DbSet<CarLoad> CarLoads { get; set; }
     }
 }

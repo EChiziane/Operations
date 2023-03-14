@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Application.IServices;
 using Domain;
 using Persistence.Contratos;
 
-namespace Application.IServices
+namespace Application
 {
     public class IdentityCardService : IIdentityCardService
     {
