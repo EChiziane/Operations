@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\RiderProjects\\Operations\\Infrastruture\\Infrastruture.csproj": {}
+    "C:\\Users\\user\\Documents\\Operations\\Back\\Infrastruture\\Infrastruture.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\RiderProjects\\Operations\\Infrastruture\\Infrastruture.csproj": {
+    "C:\\Users\\user\\Documents\\Operations\\Back\\Infrastruture\\Infrastruture.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\RiderProjects\\Operations\\Infrastruture\\Infrastruture.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\Operations\\Back\\Infrastruture\\Infrastruture.csproj",
         "projectName": "Infrastruture",
-        "projectPath": "C:\\Users\\user\\RiderProjects\\Operations\\Infrastruture\\Infrastruture.csproj",
+        "projectPath": "C:\\Users\\user\\Documents\\Operations\\Back\\Infrastruture\\Infrastruture.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\RiderProjects\\Operations\\Infrastruture\\obj\\",
+        "outputPath": "C:\\Users\\user\\Documents\\Operations\\Back\\Infrastruture\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"

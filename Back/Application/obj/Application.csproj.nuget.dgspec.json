@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\RiderProjects\\Operations\\Application\\Application.csproj": {}
+    "C:\\Users\\user\\Documents\\Operations\\Back\\Application\\Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\RiderProjects\\Operations\\Application\\Application.csproj": {
+    "C:\\Users\\user\\Documents\\Operations\\Back\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\RiderProjects\\Operations\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\Operations\\Back\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\user\\RiderProjects\\Operations\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\user\\Documents\\Operations\\Back\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\RiderProjects\\Operations\\Application\\obj\\",
+        "outputPath": "C:\\Users\\user\\Documents\\Operations\\Back\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\user\\RiderProjects\\Operations\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\user\\RiderProjects\\Operations\\Persistence\\Persistence.csproj"
+              "C:\\Users\\user\\Documents\\Operations\\Back\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\user\\Documents\\Operations\\Back\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -61,14 +61,14 @@
         }
       }
     },
-    "C:\\Users\\user\\RiderProjects\\Operations\\Domain\\Domain.csproj": {
+    "C:\\Users\\user\\Documents\\Operations\\Back\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\RiderProjects\\Operations\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\Operations\\Back\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\user\\RiderProjects\\Operations\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\user\\Documents\\Operations\\Back\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\RiderProjects\\Operations\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\user\\Documents\\Operations\\Back\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -114,14 +114,14 @@
         }
       }
     },
-    "C:\\Users\\user\\RiderProjects\\Operations\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\user\\Documents\\Operations\\Back\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\RiderProjects\\Operations\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\Operations\\Back\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\user\\RiderProjects\\Operations\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\user\\Documents\\Operations\\Back\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\RiderProjects\\Operations\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\user\\Documents\\Operations\\Back\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -136,8 +136,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\user\\RiderProjects\\Operations\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\user\\RiderProjects\\Operations\\Domain\\Domain.csproj"
+              "C:\\Users\\user\\Documents\\Operations\\Back\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\user\\Documents\\Operations\\Back\\Domain\\Domain.csproj"
               }
             }
           }

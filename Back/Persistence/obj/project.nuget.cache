@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GVnUpyLMkC4llf3/kW/18/kqyxeDaGGzfOdVhUUk2DdiP2Rk3fS8KYDQbmFQa4ZeyJGkQZqiK4yoc+GCGcBGCA==",
+  "dgSpecHash": "L6NJLDXE41sEFJJpzNjQ6L525PA0eMjFL1Y6xWyfxMOGG9CXFoNYviPybDjXm53zwIqkj6lwK5rs2STLAG0ykw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\RiderProjects\\Operations\\Persistence\\Persistence.csproj",
+  "projectFilePath": "C:\\Users\\user\\Documents\\Operations\\Back\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
