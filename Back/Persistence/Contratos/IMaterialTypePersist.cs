@@ -6,7 +6,7 @@ namespace Persistence.Contratos
     public interface IMaterialTypePersist
     {
         Task<MaterialType[]> GetAllMaterialTypes();
-        Task<MaterialType> GetMaterialTypeById(int destinationId);
+        Task<MaterialType> GetMaterialTypeById(int materialId);
         Task<MaterialType[]> GetMaterialTypeByDescription(string description);
     }
 }
