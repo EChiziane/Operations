@@ -11,6 +11,7 @@ using Microsoft.OpenApi.Models;
 using Persistence;
 using Persistence.Contextos;
 using Persistence.Contratos;
+using Persistence.Migrations;
 
 namespace Api
 {
@@ -40,6 +41,10 @@ namespace Api
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IOperationService, OperationService>();
             services.AddScoped<IOperationPersist, OperationPersist>();
+            services.AddScoped<ICarLoadPersist, CarLoadPersist>();
+            services.AddScoped<IClientPersist,ClientPersist>();
+            services.AddScoped<IDestinationPersist,DestinationPersist>();
+            services.AddScoped<IMaterialPersist,MaterialPersist>();
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo { Title = "Api", Version = "v1" }); });
         }
 
