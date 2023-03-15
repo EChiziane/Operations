@@ -7,7 +7,7 @@ using Persistence.Contratos;
 
 namespace Persistence.Migrations
 {
-    public class MaterialTypePersist:IMaterialTypePersist
+    public class MaterialTypePersist : IMaterialTypePersist
     {
         private readonly OperationContext _context;
 
@@ -15,7 +15,7 @@ namespace Persistence.Migrations
         {
             _context = context;
         }
-        
+
         public async Task<MaterialType[]> GetAllMaterialTypes()
         {
             IQueryable<MaterialType> query = _context.MaterialTypes;
@@ -26,14 +26,14 @@ namespace Persistence.Migrations
         public async Task<MaterialType> GetMaterialTypeById(int materialTypeId)
         {
             IQueryable<MaterialType> query = _context.MaterialTypes;
-            query = query.AsNoTracking().OrderBy(e => e.Id).Where(e=>e.Id==materialTypeId);
+            query = query.AsNoTracking().OrderBy(e => e.Id).Where(e => e.Id == materialTypeId);
             return await query.FirstOrDefaultAsync();
         }
 
         public async Task<MaterialType[]> GetMaterialTypeByDescription(string description)
         {
             IQueryable<MaterialType> query = _context.MaterialTypes;
-            query = query.AsNoTracking().OrderBy(e => e.Id).Where(e=>e.Description==description);
+            query = query.AsNoTracking().OrderBy(e => e.Id).Where(e => e.Description == description);
             return await query.ToArrayAsync();
         }
     }

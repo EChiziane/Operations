@@ -5,11 +5,22 @@ namespace Persistence.Contratos
 {
     public interface ICarLoadPersist
     {
-        Task<CarLoad[]> GetAllCarLoads();
-        Task<CarLoad> GetCarLoadById(int carloadId);
-        Task<CarLoad[]> GetCarLoadByMaterial(string material);
-        Task<CarLoad[]> GetCarLoadByDestination(string destination);
-        Task<CarLoad[]> GetCarLoadByDriver(string driver);
-        Task<CarLoad[]> GetCarLoadByDate(string date);
+        Task<CarLoad[]> GetAllCarLoads(bool includeDestination, bool includeClient, bool includeDriver,
+            bool includeMaterial);
+
+        Task<CarLoad> GetCarLoadById(int carloadId, bool includeDestination, bool includeClient, bool includeDriver,
+            bool includeMaterial);
+
+        Task<CarLoad[]> GetCarLoadByMaterial(string material, bool includeDestination, bool includeClient,
+            bool includeDriver, bool includeMaterial);
+
+        Task<CarLoad[]> GetCarLoadByDestination(string destination, bool includeDestination, bool includeClient,
+            bool includeDriver, bool includeMaterial);
+
+        Task<CarLoad[]> GetCarLoadByDriver(string driver, bool includeDestination, bool includeClient,
+            bool includeDriver, bool includeMaterial);
+
+        Task<CarLoad[]> GetCarLoadByDate(string date, bool includeDestination, bool includeClient, bool includeDriver,
+            bool includeMaterial);
     }
 }

@@ -7,7 +7,7 @@ using Persistence.Contratos;
 
 namespace Persistence
 {
-    public class DestinationPersist:IDestinationPersist
+    public class DestinationPersist : IDestinationPersist
     {
         private readonly OperationContext _context;
 
@@ -15,6 +15,7 @@ namespace Persistence
         {
             _context = context;
         }
+
         public async Task<Destination[]> GetAllDestinations()
         {
             IQueryable<Destination> query = _context.Destinations;
