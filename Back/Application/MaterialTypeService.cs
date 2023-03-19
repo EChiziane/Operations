@@ -21,6 +21,14 @@ namespace Application
         {
             try
             {
+                var materialType = await _materialTypePersist.GetMaterialTypeByCode(model.Code);
+            
+                if(materialType != null)
+                {
+                    throw new Exception("Existe Um Material Com este Codigo");
+                }
+            
+                
                 _geralPersist.Add(model);
                 if (await _geralPersist.SaveChangesAsync()) ;
                 return await _materialTypePersist.GetMaterialTypeById(model.Id);

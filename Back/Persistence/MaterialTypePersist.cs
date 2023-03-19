@@ -30,6 +30,13 @@ namespace Persistence.Migrations
             return await query.FirstOrDefaultAsync();
         }
 
+        public async Task<MaterialType> GetMaterialTypeByCode(int materialCode)
+        {
+            IQueryable<MaterialType> query = _context.MaterialTypes;
+            query = query.AsNoTracking().OrderBy(e => e.Id).Where(e => e.Code == materialCode);
+            return await query.FirstOrDefaultAsync();
+        }
+
         public async Task<MaterialType[]> GetMaterialTypeByDescription(string description)
         {
             IQueryable<MaterialType> query = _context.MaterialTypes;
