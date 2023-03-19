@@ -6,10 +6,10 @@ namespace Application.IServices
     public interface IDestinationService
     {
         Task<Destination> AddDestination(Destination model);
-        Task<Destination> UpdateDestination(int clientId, Destination model);
-        Task<bool> DeleteDestination(int clientId);
+        Task<Destination> UpdateDestination(int destinationId, Destination model);
+        Task<bool> DeleteDestination(int destinationId);
         Task<Destination[]> GetAllDestinationsAsync();
-        Task<Destination[]> GetAllDestinationByNameAsync();
-        Task<Destination> GetDestinationByIdAsync();
+        Task<Destination[]> GetAllDestinationByNameAsync(string name);
+        Task<Destination> GetDestinationByIdAsync(int destinationId);
     }
 }

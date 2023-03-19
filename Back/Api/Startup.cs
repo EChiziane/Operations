@@ -47,6 +47,7 @@ namespace Api
             services.AddScoped<IMaterialTypePersist, MaterialTypePersist>();
             services.AddScoped<IMaterialPersist, MaterialPersist>();
             services.AddScoped<IMaterialTypeService, MaterialTypeService>();
+            services.AddScoped<IDestinationService, DestinationService>();
 
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo { Title = "Api", Version = "v1" }); });
         }
