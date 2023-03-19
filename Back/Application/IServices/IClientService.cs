@@ -10,6 +10,6 @@ namespace Application
         Task<bool> DeleteClient(int clientId);
         Task<Client[]> GetAllClientsAsync();
         Task<Client[]> GetAllClientByNameAsync();
-        Task<Client> GetClientByIdAsync();   
+        Task<Client> GetClientByIdAsync();
     }
 }

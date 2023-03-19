@@ -10,6 +10,6 @@ namespace Application.IServices
         Task<bool> DeleteCarLoad(int clientId);
         Task<CarLoad[]> GetAllCarLoadsAsync();
         Task<CarLoad[]> GetAllCarLoadByNameAsync();
-        Task<CarLoad> GetCarLoadByIdAsync(); 
+        Task<CarLoad> GetCarLoadByIdAsync();
     }
 }

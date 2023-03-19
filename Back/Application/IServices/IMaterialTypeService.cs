@@ -3,7 +3,7 @@ using Domain;
 
 namespace Application.IServices
 {
-    public interface IMaterialTypeTypeService
+    public interface IMaterialTypeService
     {
         Task<MaterialType> AddMaterialType(MaterialType model);
         Task<MaterialType> UpdateMaterialType(int materialId, MaterialType model);

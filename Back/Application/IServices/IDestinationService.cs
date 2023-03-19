@@ -10,6 +10,6 @@ namespace Application.IServices
         Task<bool> DeleteDestination(int clientId);
         Task<Destination[]> GetAllDestinationsAsync();
         Task<Destination[]> GetAllDestinationByNameAsync();
-        Task<Destination> GetDestinationByIdAsync(); 
+        Task<Destination> GetDestinationByIdAsync();
     }
 }
