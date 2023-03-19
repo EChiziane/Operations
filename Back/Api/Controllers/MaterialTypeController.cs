@@ -9,12 +9,12 @@ namespace Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class MaterialTypeController:ControllerBase
+    public class MaterialTypeController : ControllerBase
     {
         private readonly IMaterialTypeService _materialTypeService;
 
 
-        public MaterialTypeController(IMaterialTypeService materialTypeService )
+        public MaterialTypeController(IMaterialTypeService materialTypeService)
         {
             _materialTypeService = materialTypeService;
         }
@@ -28,13 +28,14 @@ namespace Api.Controllers
                 if (materialTypes is null) return NotFound("Nenhum Material Type Encontrado");
                 return Ok(materialTypes);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError,
                     $"Erro ao Tentar Carregar Material Types. Erro: {e.Message}");
             }
         }
-[HttpPost]
+
+        [HttpPost]
         public async Task<IActionResult> PostMaterialType(MaterialType model)
         {
             try
@@ -51,5 +52,53 @@ namespace Api.Controllers
             }
         }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetMaterialTypeById(int id)
+        {
+            try
+            {
+                var materialType = await _materialTypeService.GetMaterialTypeByIdAsync(id);
+                if (materialType is null) return NotFound("Material Type Not Found");
+                return Ok(materialType);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    $"Error Trying do Found that operation Type. Error {e.Message}");
+            }
+        }
+
+        [HttpGet("code/{code}")]
+        public async Task<IActionResult> GetMaterialTypeByCode(int code)
+        {
+            try
+            {
+                var materialType = await _materialTypeService.GetMaterialTypeByCodeAsync(code);
+                if (materialType is null) return NotFound("Material Type Not Found");
+                return Ok(materialType);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    $"Error Trying do Found that operation Type. Error {e.Message}");
+            }
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutMaterialType(int id, MaterialType model)
+        {
+            try
+            {
+                var materialType = await _materialTypeService.UpdateMaterialType(id,model);
+                if (materialType is null) return NotFound("Material Type Not Found");
+                return Ok(materialType);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(
+                    StatusCodes.Status500InternalServerError,
+                    $"Error Trying to update MaterialType. Erro {e.Message}");
+            }  
+        }
     }
 }

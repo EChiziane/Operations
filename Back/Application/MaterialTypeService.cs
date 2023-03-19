@@ -22,13 +22,10 @@ namespace Application
             try
             {
                 var materialType = await _materialTypePersist.GetMaterialTypeByCode(model.Code);
-            
-                if(materialType != null)
-                {
-                    throw new Exception("Existe Um Material Com este Codigo");
-                }
-            
-                
+
+                if (materialType != null) throw new Exception("Existe Um Material Com este Codigo");
+
+
                 _geralPersist.Add(model);
                 if (await _geralPersist.SaveChangesAsync()) ;
                 return await _materialTypePersist.GetMaterialTypeById(model.Id);
@@ -40,14 +37,41 @@ namespace Application
             }
         }
 
-        public Task<MaterialType> UpdateMaterialType(int materialId, MaterialType model)
+        public async Task<MaterialType> UpdateMaterialType(int materialId, MaterialType model)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var materialType = await _materialTypePersist.GetMaterialTypeById(materialId);
+                if (materialType is null) 
+                    throw  new  Exception("No Material Type with that Id");
+                _geralPersist.Update(model);
+                if (await _geralPersist.SaveChangesAsync())
+                {
+                    return await _materialTypePersist.GetMaterialTypeById(model.Id);
+                }
+
+                return null;
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
 
-        public Task<bool> DeleteMaterialType(int materialId)
+        public async Task<bool> DeleteMaterialType(int materialId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var materialType = await _materialTypePersist.GetMaterialTypeById(materialId);
+                if (materialType is null) 
+                    throw  new  Exception("No Material Type with that Id");
+               _geralPersist.Delete(materialType);
+               return await _geralPersist.SaveChangesAsync();
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
 
         public async Task<MaterialType[]> GetAllMaterialTypesAsync()
@@ -69,6 +93,20 @@ namespace Application
             try
             {
                 var materialTypes = await _materialTypePersist.GetMaterialTypeByDescription(nome);
+                if (materialTypes is null) return null;
+                return materialTypes;
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+        public async Task<MaterialType> GetMaterialTypeByCodeAsync(int materialCode)
+        {
+            try
+            {
+                var materialTypes = await _materialTypePersist.GetMaterialTypeByCode(materialCode);
                 if (materialTypes is null) return null;
                 return materialTypes;
             }

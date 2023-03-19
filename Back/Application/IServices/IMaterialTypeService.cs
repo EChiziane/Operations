@@ -10,6 +10,8 @@ namespace Application.IServices
         Task<bool> DeleteMaterialType(int materialId);
         Task<MaterialType[]> GetAllMaterialTypesAsync();
         Task<MaterialType[]> GetAllMaterialTypeByNameAsync(string nome);
+        Task<MaterialType> GetMaterialTypeByCodeAsync(int materialCode);
+
         Task<MaterialType> GetMaterialTypeByIdAsync(int materialId);
     }
 }
