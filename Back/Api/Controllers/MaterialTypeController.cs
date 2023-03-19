@@ -100,5 +100,21 @@ namespace Api.Controllers
                     $"Error Trying to update MaterialType. Erro {e.Message}");
             }  
         }
+        
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteMaterialType(int id)
+        {
+            try
+            {
+                return await _materialTypeService.DeleteMaterialType(id)
+                    ? Ok("Deletado")
+                    : BadRequest("MaterialType was deleted");
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    $"Error Trying to delete {e.Message}");
+            }
+        }
     }
 }
