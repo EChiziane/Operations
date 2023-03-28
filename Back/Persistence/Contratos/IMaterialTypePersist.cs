@@ -7,7 +7,7 @@ namespace Persistence.Contratos
     {
         Task<MaterialType[]> GetAllMaterialTypes();
         Task<MaterialType> GetMaterialTypeById(int materialId);
-        Task<MaterialType> GetMaterialTypeByCode(int materialCode);
+        Task<MaterialType> GetMaterialTypeByCode(int destinationCode);
         Task<MaterialType[]> GetMaterialTypeByDescription(string description);
     }
 }

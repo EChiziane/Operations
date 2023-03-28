@@ -11,7 +11,7 @@ namespace Domain
         public DateTime? DueDate { get; set; }
         public DateTime? CreateDate { get; set; }
         public bool Status { get; set; }
-        public int UserId { get; set; }
-        public User User { get; set; }
+        public int PersonId { get; set; }
+        public Person Person { get; set; }
     }
 }

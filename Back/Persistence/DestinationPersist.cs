@@ -38,5 +38,13 @@ namespace Persistence
                 de => de.Description == description);
             return await query.ToArrayAsync();
         }
+        
+        public async Task<Destination> GetDestinationByCode(int destinationCode)
+        {
+            IQueryable<Destination> query = _context.Destinations;
+            query = query.AsNoTracking().OrderBy(e => e.Id).Where(e => e.Code == destinationCode);
+            return await query.FirstOrDefaultAsync();
+        }
+
     }
 }

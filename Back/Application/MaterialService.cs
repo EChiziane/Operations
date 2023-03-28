@@ -1,7 +1,4 @@
-﻿
-
-/*
-using System;
+﻿using System;
 using System.Threading.Tasks;
 using Application.IServices;
 using Domain;
@@ -9,7 +6,7 @@ using Persistence.Contratos;
 
 namespace Application
 {
-    public class MaterialService:IMaterialService
+    public class MaterialService : IMaterialService
     {
         private readonly IMaterialPersist _materialPersist;
         private readonly IGeralPersist _geralPersist;
@@ -19,13 +16,14 @@ namespace Application
             _materialPersist = materialPersist;
             _geralPersist = geralPersist;
         }
+
         public async Task<Material> AddMaterial(Material model)
         {
             try
             {
-   _geralPersist.Add(model);
+                _geralPersist.Add(model);
                 if (await _geralPersist.SaveChangesAsync()) ;
-                return await _materialPersist.GetMaterialById(model.Id, true);
+                return await _materialPersist.GetMaterialById(model.Id, false);
                 return null;
             }
             catch (Exception e)
@@ -38,14 +36,12 @@ namespace Application
         {
             try
             {
-                var materialType = await _materialPersist.GetMaterialById(materialId);
-                if (materialType is null) 
-                    throw  new  Exception("No Material Type with that Id");
+                var material = await _materialPersist.GetMaterialById(materialId, false);
+                if (material is null)
+                    throw new Exception("No Material Type with that Id");
                 _geralPersist.Update(model);
                 if (await _geralPersist.SaveChangesAsync())
-                {
-                    return await _materialPersist.GetMaterialById(model.Id);
-                }
+                    return await _materialPersist.GetMaterialById(model.Id, true);
 
                 return null;
             }
@@ -59,10 +55,10 @@ namespace Application
         {
             try
             {
-                var materialType = await _materialPersist.GetMaterialById(materialId);
-                if (materialType is null) 
-                    throw  new  Exception("No Material Type with that Id");
-                _geralPersist.Delete(materialType);
+                var material = await _materialPersist.GetMaterialById(materialId, false);
+                if (material is null)
+                    throw new Exception("No Material Type with that Id");
+                _geralPersist.Delete(material);
                 return await _geralPersist.SaveChangesAsync();
             }
             catch (Exception e)
@@ -75,7 +71,7 @@ namespace Application
         {
             try
             {
-                var materialTypes = await _materialPersist.GetAllMaterials();
+                var materialTypes = await _materialPersist.GetAllMaterials(includeMaterial);
                 if (materialTypes is null) return null;
                 return materialTypes;
             }
@@ -89,7 +85,7 @@ namespace Application
         {
             try
             {
-                var materialTypes = await _materialPersist.GetMaterialByDescription(nome);
+                var materialTypes = await _materialPersist.GetMaterialByName(nome, includeMaterial);
                 if (materialTypes is null) return null;
                 return materialTypes;
             }
@@ -103,7 +99,7 @@ namespace Application
         {
             try
             {
-                var materialTypes = await _materialPersist.GetMaterialById(materialId);
+                var materialTypes = await _materialPersist.GetMaterialById(materialId, includeMaterial);
                 if (materialTypes is null) return null;
                 return materialTypes;
             }
@@ -113,4 +109,4 @@ namespace Application
             }
         }
     }
-}*/
+}

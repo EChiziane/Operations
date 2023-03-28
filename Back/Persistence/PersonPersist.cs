@@ -7,33 +7,33 @@ using Persistence.Contratos;
 
 namespace Persistence
 {
-    public class UserPersist : IUserPersist
+    public class PersonPersist : IPersonPersist
     {
         private readonly OperationContext _context;
 
-        public UserPersist(OperationContext context)
+        public PersonPersist(OperationContext context)
         {
             _context = context;
         }
 
 
-        public async Task<User[]> GetUsersByNameAsync(string name)
+        public async Task<Person[]> GetPeopleByNameAsync(string name)
         {
-            IQueryable<User> query = _context.Users;
+            IQueryable<Person> query = _context.People;
             query = query.AsNoTracking().OrderBy(e => e.Id)
-                .Where(e => e.Name.ToLower().Contains(name.ToLower()));
+                .Where(e => e.FistName.ToLower().Contains(name.ToLower()));
             return await query.ToArrayAsync();
         }
 
-        public async Task<User[]> GetAllUsers()
+        public async Task<Person[]> GetAllPeople()
         {
-            IQueryable<User> query = _context.Users;
+            IQueryable<Person> query = _context.People;
             return await query.ToArrayAsync();
         }
 
-        public async Task<User> GetUserById(int operationTypeId)
+        public async Task<Person> GetPersonById(int operationTypeId)
         {
-            IQueryable<User> query = _context.Users;
+            IQueryable<Person> query = _context.People;
             query = query.AsNoTracking().OrderBy(e => e.Id).Where(e => e.Id == operationTypeId);
             return await query.FirstOrDefaultAsync();
         }

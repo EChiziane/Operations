@@ -37,8 +37,8 @@ namespace Api
             services.AddScoped<IdentityCard, IdentityCard>();
             services.AddScoped<IIdentityCardPersist, IdentityCardPersist>();
             services.AddScoped<IIdentityCardService, IdentityCardService>();
-            services.AddScoped<IUserPersist, UserPersist>();
-            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IPersonPersist, PersonPersist>();
+            services.AddScoped<IPersonService, PersonService>();
             services.AddScoped<IOperationService, OperationService>();
             services.AddScoped<IOperationPersist, OperationPersist>();
             services.AddScoped<ICarLoadPersist, CarLoadPersist>();
@@ -48,7 +48,10 @@ namespace Api
             services.AddScoped<IMaterialPersist, MaterialPersist>();
             services.AddScoped<IMaterialTypeService, MaterialTypeService>();
             services.AddScoped<IDestinationService, DestinationService>();
+            services.AddScoped<ICarLoadService, CarLoadService>();
+            services.AddScoped<IMaterialService, MaterialService>();
 
+            services.AddCors();
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo { Title = "Api", Version = "v1" }); });
         }
 

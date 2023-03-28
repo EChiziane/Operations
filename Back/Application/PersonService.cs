@@ -6,24 +6,24 @@ using Persistence.Contratos;
 
 namespace Application
 {
-    public class UserService : IUserService
+    public class PersonService : IPersonService
     {
         private readonly IGeralPersist _geralPersist;
-        private readonly IUserPersist _userPersist;
+        private readonly IPersonPersist _personPersist;
 
-        public UserService(IGeralPersist geralPersist, IUserPersist userPersist)
+        public PersonService(IGeralPersist geralPersist, IPersonPersist personPersist)
         {
             _geralPersist = geralPersist;
-            _userPersist = userPersist;
+            _personPersist = personPersist;
         }
 
-        public async Task<User> AddUser(User model)
+        public async Task<Person> AddPerson(Person model)
         {
             try
             {
                 _geralPersist.Add(model);
                 if (await _geralPersist.SaveChangesAsync())
-                    return await _userPersist.GetUserById(model.Id);
+                    return await _personPersist.GetPersonById(model.Id);
                 return null;
             }
             catch (Exception e)
@@ -32,16 +32,16 @@ namespace Application
             }
         }
 
-        public Task<User> UpdateUser(int userId, User model)
+        public Task<Person> UpdatePerson(int userId, Person model)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<bool> DeleteUser(int userId)
+        public async Task<bool> DeletePerson(int userId)
         {
             try
             {
-                var user = await _userPersist.GetUserById(userId);
+                var user = await _personPersist.GetPersonById(userId);
                 if (user is null) throw new Exception("No Operation Type with this id");
                 _geralPersist.Delete(user);
                 return await _geralPersist.SaveChangesAsync();
@@ -52,11 +52,11 @@ namespace Application
             }
         }
 
-        public async Task<User[]> GetAllUsersAsync(bool includeBi = false)
+        public async Task<Person[]> GetAllPeopleAsync(bool includeBi = false)
         {
             try
             {
-                var users = await _userPersist.GetAllUsers();
+                var users = await _personPersist.GetAllPeople();
                 if (users is null) return null;
                 return users;
             }
@@ -66,16 +66,16 @@ namespace Application
             }
         }
 
-        public Task<User[]> GetAllUserByNameAsync(string nome, bool includeBi = false)
+        public Task<Person[]> GetAllPeopleByNameAsync(string nome, bool includeBi = false)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<User> GetUserByIdAsync(int userId, bool includeBi = false)
+        public async Task<Person> GetPersonByIdAsync(int userId, bool includeBi = false)
         {
             try
             {
-                var user = await _userPersist.GetUserById(userId);
+                var user = await _personPersist.GetPersonById(userId);
                 if (user is null) throw new Exception("No userFound");
                 return user;
             }
@@ -86,7 +86,7 @@ namespace Application
             }
         }
 
-        public Task<User[]> GetAllUserByPhoneAsync(int numero, bool includeBi = false)
+        public Task<Person[]> GetAllPeopleByPhoneAsync(int numero, bool includeBi = false)
         {
             throw new NotImplementedException();
         }

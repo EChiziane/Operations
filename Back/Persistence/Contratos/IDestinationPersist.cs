@@ -7,6 +7,7 @@ namespace Persistence.Contratos
     {
         Task<Destination[]> GetAllDestinations();
         Task<Destination> GetDestinationById(int destinationId);
+        Task<Destination> GetDestinationByCode(int materialCode);
         Task<Destination[]> GetDestinationByDescription(string description);
     }
 }

@@ -42,13 +42,11 @@ namespace Application
             try
             {
                 var materialType = await _materialTypePersist.GetMaterialTypeById(materialId);
-                if (materialType is null) 
-                    throw  new  Exception("No Material Type with that Id");
+                if (materialType is null)
+                    throw new Exception("No Material Type with that Id");
                 _geralPersist.Update(model);
                 if (await _geralPersist.SaveChangesAsync())
-                {
                     return await _materialTypePersist.GetMaterialTypeById(model.Id);
-                }
 
                 return null;
             }
@@ -63,10 +61,10 @@ namespace Application
             try
             {
                 var materialType = await _materialTypePersist.GetMaterialTypeById(materialId);
-                if (materialType is null) 
-                    throw  new  Exception("No Material Type with that Id");
-               _geralPersist.Delete(materialType);
-               return await _geralPersist.SaveChangesAsync();
+                if (materialType is null)
+                    throw new Exception("No Material Type with that Id");
+                _geralPersist.Delete(materialType);
+                return await _geralPersist.SaveChangesAsync();
             }
             catch (Exception e)
             {

@@ -9,21 +9,21 @@ namespace Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class UserController : ControllerBase
+    public class PersonController : ControllerBase
     {
-        private readonly IUserService _userService;
+        private readonly IPersonService _personService;
 
-        public UserController(IUserService userService)
+        public PersonController(IPersonService personService)
         {
-            _userService = userService;
+            _personService = personService;
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(User model)
+        public async Task<IActionResult> Post(Person model)
         {
             try
             {
-                var user = await _userService.AddUser(model);
+                var user = await _personService.AddPerson(model);
                 if (user is null) return BadRequest("Error Trying to Save User");
                 return Ok(user);
             }
@@ -39,7 +39,7 @@ namespace Api.Controllers
         {
             try
             {
-                var users = await _userService.GetAllUsersAsync();
+                var users = await _personService.GetAllPeopleAsync();
                 if (users is null) return NotFound("Nenhum User Encontrado");
                 return Ok(users);
             }
@@ -55,7 +55,7 @@ namespace Api.Controllers
         {
             try
             {
-                return await _userService.DeleteUser(id)
+                return await _personService.DeletePerson(id)
                     ? Ok("Deletado")
                     : BadRequest("User was deleted");
             }
@@ -71,7 +71,7 @@ namespace Api.Controllers
         {
             try
             {
-                var user = await _userService.GetUserByIdAsync(id);
+                var user = await _personService.GetPersonByIdAsync(id);
                 if (user is null) return NotFound("User Type not Found");
                 return Ok(user);
             }
@@ -83,11 +83,11 @@ namespace Api.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, User model)
+        public async Task<IActionResult> Put(int id, Person model)
         {
             try
             {
-                var user = await _userService.UpdateUser(id, model);
+                var user = await _personService.UpdatePerson(id, model);
                 if (user is null) return BadRequest("Error Trying To Update");
                 return Ok(user);
             }

@@ -6,9 +6,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
-{[ApiController]
+{
+    [ApiController]
     [Route("api/[controller]")]
-    public class DestinationController: ControllerBase
+    public class DestinationController : ControllerBase
     {
         private readonly IDestinationService _destinationService;
 
@@ -16,7 +17,7 @@ namespace Api.Controllers
         {
             _destinationService = destinationService;
         }
-        
+
         [HttpGet]
         public async Task<IActionResult> GetDestination()
         {
@@ -32,7 +33,7 @@ namespace Api.Controllers
                     $"Erro ao Tentar Carregar Destination s. Erro: {e.Message}");
             }
         }
-        
+
         [HttpPost]
         public async Task<IActionResult> PostDestination(Destination model)
         {
@@ -66,14 +67,29 @@ namespace Api.Controllers
             }
         }
 
-
+        [HttpGet("code/{code}")]
+        public async Task<IActionResult> GetDestinationByCode(int code)
+        {
+            try
+            {
+                var destination = await _destinationService.GetDestinationByCodeAsync(code);
+                if (destination is null) return NotFound("Material Type Not Found");
+                return Ok(destination);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    $"Error Trying do Found that operation Type. Error {e.Message}");
+            }
+        }
+        
 
         [HttpPut("{id}")]
         public async Task<IActionResult> PutDestination(int id, Destination model)
         {
             try
             {
-                var destination = await _destinationService.UpdateDestination(id,model);
+                var destination = await _destinationService.UpdateDestination(id, model);
                 if (destination is null) return NotFound("Destination  Not Found");
                 return Ok(destination);
             }
@@ -82,9 +98,9 @@ namespace Api.Controllers
                 return StatusCode(
                     StatusCodes.Status500InternalServerError,
                     $"Error Trying to update Destination. Erro {e.Message}");
-            }  
+            }
         }
-        
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteDestination(int id)
         {

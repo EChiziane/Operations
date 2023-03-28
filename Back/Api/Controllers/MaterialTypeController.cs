@@ -89,7 +89,7 @@ namespace Api.Controllers
         {
             try
             {
-                var materialType = await _materialTypeService.UpdateMaterialType(id,model);
+                var materialType = await _materialTypeService.UpdateMaterialType(id, model);
                 if (materialType is null) return NotFound("Material Type Not Found");
                 return Ok(materialType);
             }
@@ -98,9 +98,9 @@ namespace Api.Controllers
                 return StatusCode(
                     StatusCodes.Status500InternalServerError,
                     $"Error Trying to update MaterialType. Erro {e.Message}");
-            }  
+            }
         }
-        
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteMaterialType(int id)
         {

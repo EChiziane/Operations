@@ -16,7 +16,7 @@ namespace Persistence.Contextos
 
         public DbSet<OperationType> OperationTypes { get; set; }
 
-        public DbSet<User> Users { get; set; }
+        public DbSet<Person> People { get; set; }
         public DbSet<Material> Materials { get; set; }
         public DbSet<MaterialType> MaterialTypes { get; set; }
         public DbSet<Destination> Destinations { get; set; }

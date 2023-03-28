@@ -9,8 +9,8 @@ namespace Domain
         public float Amount { get; set; }
         public int MaterialId { get; set; }
         public Material Material { get; set; }
-        public int ClientId { get; set; }
-        public Client Client { get; set; }
+        public int PersonId { get; set; }
+        public Person Person { get; set; }
         public int DriverId { get; set; }
         public Driver Driver { get; set; }
         public int DestinationId { get; set; }
