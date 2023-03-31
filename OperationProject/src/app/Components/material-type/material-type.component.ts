@@ -1,6 +1,8 @@
-import {Component} from '@angular/core';
+import {Component, TemplateRef} from '@angular/core';
 import {MaterialTypeService} from "../../services/material-type.service";
 import {MaterialType} from "../../Models/Material Type";
+import {BsModalRef, BsModalService} from "ngx-bootstrap/modal";
+import {MatDialog} from "@angular/material/dialog";
 
 @Component({
   selector: 'app-material-type',
@@ -8,11 +10,15 @@ import {MaterialType} from "../../Models/Material Type";
   styleUrls: ['./material-type.component.css']
 })
 export class MaterialTypeComponent {
+  modalRef?: BsModalRef;
   public materialTypes: MaterialType[] = [];
   public materialTypesFiltrados: MaterialType[] = [];
   private filtroListado = '';
+  displayedColumns: string[] = ['Id', 'Code', 'Description', 'Edit'];
 
-  constructor(private materialTypeService: MaterialTypeService) {
+  constructor(private materialTypeService: MaterialTypeService,
+              public dialog: MatDialog,
+              private modalService: BsModalService) {
   }
 
   public get filtroLista(): string {
@@ -44,5 +50,18 @@ export class MaterialTypeComponent {
 
       },
     })
+  }
+
+  openModal(template: TemplateRef<any>): void {
+    this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
+  }
+
+  confirm(selected:number): void {
+    if(selected==1)
+      this.modalRef?.hide();
+  }
+
+  decline(): void {
+    this.modalRef?.hide();
   }
 }

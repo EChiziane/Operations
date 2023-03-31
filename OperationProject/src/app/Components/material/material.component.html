@@ -1,4 +1,82 @@
-<p>material-type works!</p>
-<div *ngFor="let material of materialsFiltrados">
-  {{material.materialType.description}}
+<div class="content">
+  <div class="table-content">
+    <button (click)="openModal(templateAdd)" mat-raised-button>Add</button>
+    <table [dataSource]="materials" class="mat-elevation-z8" mat-table>
+
+      <!-- Position Column -->
+      <ng-container matColumnDef="Id">
+        <th *matHeaderCellDef mat-header-cell> No.</th>
+        <td *matCellDef="let element" mat-cell> {{element.id}} </td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="Price">
+        <th *matHeaderCellDef mat-header-cell> Price</th>
+        <td *matCellDef="let element" mat-cell> {{element.price}} </td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="Description">
+        <th *matHeaderCellDef mat-header-cell>Description</th>
+        <td *matCellDef="let element" mat-cell> {{element.materialType.description}} </td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="Edit">
+        <th *matHeaderCellDef mat-header-cell> Edit</th>
+        <td *matCellDef="let element" mat-cell>
+          <mat-icon (click)="openModal(templateAdd)">edit</mat-icon>
+          <mat-icon (click)="openModal(template)">delete</mat-icon>
+        </td>
+      </ng-container>
+
+      <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>
+      <tr *matRowDef="let row; columns: displayedColumns;" mat-row></tr>
+
+      <!-- Row shown when there is no matching data. -->
+      <tr *matNoDataRow class="mat-row">
+        <td class="mat-cell" colspan="4">No data matching the filter ""</td>
+      </tr>
+    </table>
+  </div>
 </div>
+
+
+<ng-template #template>
+  <div class="modal-body text-center">
+    <p>Tem certeza que quer deletar este Evento?</p>
+    <button (click)="confirm(1)" color="primary" mat-raised-button>Sim</button>
+    <button (click)="decline()" color="warn" mat-raised-button>Nao</button>
+  </div>
+</ng-template>
+
+<ng-template #templateAdd>
+  <form class="example-form">
+    <br>
+    <p>Create Destination</p>
+    <mat-form-field class="example-full-width">
+      <mat-label>Price</mat-label>
+      <input matInput placeholder="Ex. Pizza" type="number" value="">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Description</mat-label>
+      <input matInput placeholder="Ex. Maputo" value="">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Select an option</mat-label>
+      <mat-select [(value)]="selected">
+
+        <mat-option *ngFor="let elementa of materials"  value="option1">
+          {{elementa.materialType.description}}</mat-option>
+
+      </mat-select>
+    </mat-form-field>
+
+  </form>
+  <div class="action-button">
+    <button (click)="confirm(2)" color="primary" mat-raised-button>Save</button>
+    <button (click)="decline()" color="warn" mat-raised-button>Cancel</button>
+  </div>
+</ng-template>

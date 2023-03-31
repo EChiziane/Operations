@@ -21,7 +21,7 @@ namespace Persistence
         {
             IQueryable<Person> query = _context.People;
             query = query.AsNoTracking().OrderBy(e => e.Id)
-                .Where(e => e.FistName.ToLower().Contains(name.ToLower()));
+                .Where(e => e.FirstName.ToLower().Contains(name.ToLower()));
             return await query.ToArrayAsync();
         }
 

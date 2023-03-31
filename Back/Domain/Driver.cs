@@ -1,10 +1,9 @@
-﻿namespace Domain
+﻿using System.Reflection.Metadata;
+
+namespace Domain
 {
-    public class Driver
+    public class Driver:Person
     {
-        public int Id { get; set; }
-        public string FistName { get; set; }
-        public string LastName { get; set; }
-        public string Mobile { get; set; }
+        public int Hability { get; set; }
     }
 }

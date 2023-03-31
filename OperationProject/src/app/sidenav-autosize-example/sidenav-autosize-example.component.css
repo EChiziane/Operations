@@ -10,8 +10,10 @@
   width: 230px;
 }
 .app-sidenav-content {
-  display: flex;
-  height: 100%;
+position: fixed;
   align-items: center;
   justify-content: center;
+  padding: 5%;
+  height: 80%;
+  width: 90%;
 }

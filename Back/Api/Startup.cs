@@ -50,6 +50,9 @@ namespace Api
             services.AddScoped<IDestinationService, DestinationService>();
             services.AddScoped<ICarLoadService, CarLoadService>();
             services.AddScoped<IMaterialService, MaterialService>();
+            services.AddScoped<IDriverPersist, DriverPersist>();
+            services.AddScoped<IDriverService, DriverService>();
+            services.AddScoped<IClientService, ClientService>();
 
             services.AddCors();
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo { Title = "Api", Version = "v1" }); });

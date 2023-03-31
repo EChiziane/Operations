@@ -10,3 +10,15 @@ C:\Users\user\RiderProjects\Operations\Infrastruture\obj\Debug\net5.0\Infrastrut
 C:\Users\user\RiderProjects\Operations\Infrastruture\obj\Debug\net5.0\refint\Infrastruture.dll
 C:\Users\user\RiderProjects\Operations\Infrastruture\obj\Debug\net5.0\Infrastruture.pdb
 C:\Users\user\RiderProjects\Operations\Infrastruture\obj\Debug\net5.0\ref\Infrastruture.dll
+C:\Users\user\Documents\Operations\Back\Infrastruture\bin\Debug\net5.0\Infrastruture.deps.json
+C:\Users\user\Documents\Operations\Back\Infrastruture\bin\Debug\net5.0\Infrastruture.dll
+C:\Users\user\Documents\Operations\Back\Infrastruture\bin\Debug\net5.0\Infrastruture.pdb
+C:\Users\user\Documents\Operations\Back\Infrastruture\obj\Debug\net5.0\Infrastruture.csproj.AssemblyReference.cache
+C:\Users\user\Documents\Operations\Back\Infrastruture\obj\Debug\net5.0\Infrastruture.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\Operations\Back\Infrastruture\obj\Debug\net5.0\Infrastruture.AssemblyInfoInputs.cache
+C:\Users\user\Documents\Operations\Back\Infrastruture\obj\Debug\net5.0\Infrastruture.AssemblyInfo.cs
+C:\Users\user\Documents\Operations\Back\Infrastruture\obj\Debug\net5.0\Infrastruture.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Operations\Back\Infrastruture\obj\Debug\net5.0\Infrastruture.dll
+C:\Users\user\Documents\Operations\Back\Infrastruture\obj\Debug\net5.0\refint\Infrastruture.dll
+C:\Users\user\Documents\Operations\Back\Infrastruture\obj\Debug\net5.0\Infrastruture.pdb
+C:\Users\user\Documents\Operations\Back\Infrastruture\obj\Debug\net5.0\ref\Infrastruture.dll

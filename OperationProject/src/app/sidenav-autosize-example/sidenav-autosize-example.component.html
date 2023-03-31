@@ -1,5 +1,5 @@
 <mat-toolbar color="primary">
-  <button mat-icon-button (click)="sidenav.toggle()" matTooltip="Menu">
+  <button mat-icon-button (click)="sidenav!.toggle()" matTooltip="Menu">
     <mat-icon>menu</mat-icon>
   </button>
   <span>ConcretePage.com</span>
@@ -50,8 +50,14 @@
           <a mat-list-item routerLink="#">
             <mat-icon>android</mat-icon><span>Android</span>
           </a>
-          <a mat-list-item routerLink="#">
-            <mat-icon>Settings</mat-icon><span>Material Type</span>
+          <a mat-list-item routerLink="material">
+            <mat-icon>settings</mat-icon><span>Material</span>
+          </a>
+          <a mat-list-item routerLink="destination">
+            <mat-icon>settings</mat-icon><span>Destination</span>
+          </a>
+          <a mat-list-item routerLink="material-type">
+            <mat-icon>settings</mat-icon><span>Material Type</span>
           </a>
 
         </mat-nav-list>
@@ -69,10 +75,11 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <router-outlet>
-      <div class="app-sidenav-content">
-        <app-destination></app-destination>
-      </div>
-    </router-outlet>
+    <div class="app-sidenav-content">
+      <router-outlet>
+
+      </router-outlet>
+    </div>
+
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -68,7 +68,7 @@ namespace Persistence
             IQueryable<CarLoad> query = _context.CarLoads.Include(car => car.Destination).Include(car => car.Person)
                 .Include(car => car.Driver).Include(car => car.Material);
             query = query.AsNoTracking().OrderBy(carload => carload.Id).Where(
-                car => car.Driver.FistName == driver);
+                car => car.Driver.FirstName == driver);
             return await query.ToArrayAsync();
         }
 

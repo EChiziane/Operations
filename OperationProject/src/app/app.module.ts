@@ -1,22 +1,32 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {AppComponent} from './app.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import { SidenavAutosizeExample } from './sidenav/sidenav-autosize-example.component';
-import { SidenavAutosizeExampleComponent } from './sidenav-autosize-example/sidenav-autosize-example.component';
+import {SidenavAutosizeExample} from './sidenav/sidenav-autosize-example.component';
+import {SidenavAutosizeExampleComponent} from './sidenav-autosize-example/sidenav-autosize-example.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from "@angular/material/list";
 import {MatMenuModule} from "@angular/material/menu";
 import {MatExpansionModule} from "@angular/material/expansion";
 import {RouterOutlet} from "@angular/router";
-import { MaterialTypeComponent } from './Components/material-type/material-type.component';
-import { MaterialComponent } from './Components/material/material.component';
+import {MaterialTypeComponent} from './Components/material-type/material-type.component';
+import {MaterialComponent} from './Components/material/material.component';
 import {HttpClientModule} from "@angular/common/http";
-import { DestinationComponent } from './Components/destination/destination.component';
-
+import {DestinationComponent} from './Components/destination/destination.component';
+import {GridModule} from "@syncfusion/ej2-angular-grids";
+import {MatTableModule} from "@angular/material/table";
+import {MatButtonModule} from "@angular/material/button";
+import {MatDialogModule} from "@angular/material/dialog";
+import {ModalModule} from "ngx-bootstrap/modal";
+import {TooltipModule} from "ngx-bootstrap/tooltip";
+import {MatInputModule} from "@angular/material/input";
+import {MatSelectModule} from "@angular/material/select";
+import {AppRoutingModule} from "./app-routing.module";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import { ClientComponent } from './Components/client/client.component';
 
 
 @NgModule({
@@ -26,7 +36,8 @@ import { DestinationComponent } from './Components/destination/destination.compo
     SidenavAutosizeExampleComponent,
     MaterialTypeComponent,
     MaterialComponent,
-    DestinationComponent
+    DestinationComponent,
+    ClientComponent
   ],
   imports: [
     BrowserModule,
@@ -36,11 +47,22 @@ import { DestinationComponent } from './Components/destination/destination.compo
     MatIconModule,
     MatListModule,
     MatMenuModule,
+    MatTableModule,
     MatExpansionModule,
+    MatButtonModule,
+    MatDialogModule,
     RouterOutlet,
-    HttpClientModule
+    HttpClientModule,
+    GridModule,
+    ModalModule.forRoot(),
+    TooltipModule.forRoot(),
+    MatInputModule,
+    MatSelectModule,
+    AppRoutingModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

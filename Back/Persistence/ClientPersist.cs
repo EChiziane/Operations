@@ -16,24 +16,24 @@ namespace Persistence
             _context = context;
         }
 
-        public async Task<Client[]> GetAllClients()
+        public async Task<Client[]> GetAllClientsAsync()
         {
             IQueryable<Client> query = _context.Clients;
             query = query.AsNoTracking().OrderBy(cl => cl.Id);
             return await query.ToArrayAsync();
         }
 
-        public async Task<Client> GetClientById(int clientId)
+        public async Task<Client> GetClientByIdAsync(int clientId)
         {
             IQueryable<Client> query = _context.Clients;
             query = query.AsNoTracking().OrderBy(cl => cl.Id).Where(cl => cl.Id == clientId);
             return await query.FirstOrDefaultAsync();
         }
 
-        public async Task<Client[]> GetClientByName(string name)
+        public async Task<Client[]> GetClientByNameAsync(string name)
         {
             IQueryable<Client> query = _context.Clients;
-            query = query.AsNoTracking().OrderBy(cl => cl.Id).Where(cl => cl.FistName == name);
+            query = query.AsNoTracking().OrderBy(cl => cl.Id).Where(cl => cl.FirstName == name);
             return await query.ToArrayAsync();
         }
     }

@@ -5,8 +5,8 @@ namespace Persistence.Contratos
 {
     public interface IClientPersist
     {
-        Task<Client[]> GetAllClients();
-        Task<Client> GetClientById(int clientId);
-        Task<Client[]> GetClientByName(string name);
+        Task<Client[]> GetAllClientsAsync();
+        Task<Client> GetClientByIdAsync(int clientId);
+        Task<Client[]> GetClientByNameAsync(string name);
     }
 }
