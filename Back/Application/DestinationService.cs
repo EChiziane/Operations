@@ -95,7 +95,7 @@ namespace Application
                 throw new Exception(e.Message);
             }
         }
-        
+
         public async Task<Destination> GetDestinationByCodeAsync(int destinationCode)
         {
             try

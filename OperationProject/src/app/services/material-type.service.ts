@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs";
+import {Observable, take} from "rxjs";
 import {MaterialType} from "../Models/Material Type";
 
 @Injectable({
@@ -12,6 +12,10 @@ baseURL= 'https://localhost:5001/api/MaterialType';
 
   public getMaterialType():Observable<MaterialType[]>{
     return this.http.get<MaterialType[]>(this.baseURL);
+  }
+
+  public DeleteMaterialType(id:number):Observable<MaterialType>{
+    return this.http.delete<MaterialType>(`${this.baseURL}/${id}`).pipe(take(1))
   }
 
   public getMaterialTypeById(id: number): Observable<MaterialType> {

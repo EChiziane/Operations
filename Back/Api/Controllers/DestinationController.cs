@@ -82,7 +82,7 @@ namespace Api.Controllers
                     $"Error Trying do Found that operation Type. Error {e.Message}");
             }
         }
-        
+
 
         [HttpPut("{id}")]
         public async Task<IActionResult> PutDestination(int id, Destination model)
@@ -105,9 +105,10 @@ namespace Api.Controllers
         public async Task<IActionResult> DeleteDestination(int id)
         {
             try
-            {
+            {var destination = await _destinationService.GetDestinationByIdAsync(id);
+                if (destination is null) return NotFound("Destination  Not Found");
                 return await _destinationService.DeleteDestination(id)
-                    ? Ok("Deletado")
+                    ? Ok(destination)
                     : BadRequest("Destination was deleted");
             }
             catch (Exception e)

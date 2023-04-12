@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs";
+import {Observable, take} from "rxjs";
 import {Material} from "../Models/Material";
+import {MaterialType} from "../Models/Material Type";
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +14,11 @@ export class MaterialService {
   public getMaterial():Observable<Material[]>{
     return this.http.get<Material[]>(this.baseURL);
   }
+
+  public DeleteMaterial(id:number):Observable<Material>{
+    return this.http.delete<Material>(`${this.baseURL}/${id}`).pipe(take(1))
+  }
+
 
   public getMaterialById(id: number): Observable<Material> {
     return this.http.get<Material>(`${this.baseURL}/${id}`);

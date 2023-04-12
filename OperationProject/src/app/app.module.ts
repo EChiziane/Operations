@@ -27,6 +27,8 @@ import {MatSelectModule} from "@angular/material/select";
 import {AppRoutingModule} from "./app-routing.module";
 import {MatPaginatorModule} from "@angular/material/paginator";
 import { ClientComponent } from './Components/client/client.component';
+import { DriverComponent } from './Components/driver/driver.component';
+import { CarLoadComponent } from './Components/car-load/car-load.component';
 
 
 @NgModule({
@@ -37,7 +39,9 @@ import { ClientComponent } from './Components/client/client.component';
     MaterialTypeComponent,
     MaterialComponent,
     DestinationComponent,
-    ClientComponent
+    ClientComponent,
+    DriverComponent,
+    CarLoadComponent
   ],
   imports: [
     BrowserModule,

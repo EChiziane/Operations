@@ -2,7 +2,7 @@
 
 namespace Domain
 {
-    public class Driver:Person
+    public class Driver : Person
     {
         public int Hability { get; set; }
     }

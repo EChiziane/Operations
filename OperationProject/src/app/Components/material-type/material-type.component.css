@@ -30,4 +30,7 @@ table{
   margin: 0 4%;
   width: 40%;
 }
+.modal-body .text-center button{
+}
+
 ::ng-deep .cdk-overlay-container { z-index: 9999;}

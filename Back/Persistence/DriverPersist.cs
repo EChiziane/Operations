@@ -37,7 +37,5 @@ namespace Persistence
             query = query.AsNoTracking().OrderBy(e => e.Id).Where(e => e.Id == operationTypeId);
             return await query.FirstOrDefaultAsync();
         }
-
-       
     }
 }

@@ -16,6 +16,8 @@ export class MaterialTypeComponent {
   private filtroListado = '';
   displayedColumns: string[] = ['Id', 'Code', 'Description', 'Edit'];
 
+  public materialTypeId = 0;
+
   constructor(private materialTypeService: MaterialTypeService,
               public dialog: MatDialog,
               private modalService: BsModalService) {
@@ -52,13 +54,22 @@ export class MaterialTypeComponent {
     })
   }
 
-  openModal(template: TemplateRef<any>): void {
-    this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
+  public deleteMaterialType(id:number){
+    this.materialTypeService.DeleteMaterialType(id)
+      .subscribe(materialType=>{
+        this.getMaterialTypes()
+      })
   }
 
+  openModal(template: TemplateRef<any>, materialTypeId:number): void {
+    this.materialTypeId=materialTypeId;
+    this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
+  }
   confirm(selected:number): void {
-    if(selected==1)
+    if(selected==1) {
+      this.deleteMaterialType(this.materialTypeId);
       this.modalRef?.hide();
+    }
   }
 
   decline(): void {

@@ -8,10 +8,9 @@ using Persistence.Contratos;
 
 namespace Api.Controllers
 {
-    
     [ApiController]
     [Route("api/[controller]")]
-    public class MaterialController:ControllerBase
+    public class MaterialController : ControllerBase
     {
         private readonly IMaterialService _materialService;
         private readonly IGeralPersist _geralPersist;
@@ -21,8 +20,8 @@ namespace Api.Controllers
             _materialService = materialService;
             _geralPersist = geralPersist;
         }
-        
-        
+
+
         [HttpGet]
         public async Task<IActionResult> Get()
         {
@@ -35,7 +34,7 @@ namespace Api.Controllers
             }
             catch (Exception ex)
             {
-                return this.StatusCode(StatusCodes.Status500InternalServerError,
+                return StatusCode(StatusCodes.Status500InternalServerError,
                     $"Erro ao tentar recuperar materiais. Erro: {ex.Message}");
             }
         }
@@ -52,12 +51,11 @@ namespace Api.Controllers
             }
             catch (Exception ex)
             {
-                return this.StatusCode(StatusCodes.Status500InternalServerError,
+                return StatusCode(StatusCodes.Status500InternalServerError,
                     $"Erro ao tentar recuperar materiais. Erro: {ex.Message}");
             }
         }
 
-        
 
         [HttpPost]
         public async Task<IActionResult> Post(Material model)
@@ -71,7 +69,7 @@ namespace Api.Controllers
             }
             catch (Exception ex)
             {
-                return this.StatusCode(StatusCodes.Status500InternalServerError,
+                return StatusCode(StatusCodes.Status500InternalServerError,
                     $"Erro ao tentar adicionar materiais. Erro: {ex.Message}");
             }
         }
@@ -88,7 +86,7 @@ namespace Api.Controllers
             }
             catch (Exception ex)
             {
-                return this.StatusCode(StatusCodes.Status500InternalServerError,
+                return StatusCode(StatusCodes.Status500InternalServerError,
                     $"Erro ao tentar atualizar materiais. Erro: {ex.Message}");
             }
         }
@@ -97,17 +95,15 @@ namespace Api.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             try
-            {
-                return await _materialService.DeleteMaterial(id) ? 
-                       Ok("Deletado") : 
-                       BadRequest("Material não deletado");
+            {var material = await _materialService.GetMaterialByIdAsync(id);
+                if (material is null) return NotFound("Material  Not Found");
+                return await _materialService.DeleteMaterial(id) ? Ok(material) : BadRequest("Material não deletado");
             }
             catch (Exception ex)
             {
-                return this.StatusCode(StatusCodes.Status500InternalServerError,
+                return StatusCode(StatusCodes.Status500InternalServerError,
                     $"Erro ao tentar deletar materiais. Erro: {ex.Message}");
             }
         }
-    
     }
 }

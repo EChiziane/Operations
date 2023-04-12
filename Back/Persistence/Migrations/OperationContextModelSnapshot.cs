@@ -25,6 +25,9 @@ namespace Persistence.Migrations
                     b.Property<float>("Amount")
                         .HasColumnType("REAL");
 
+                    b.Property<int>("ClientId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<DateTime>("Date")
                         .HasColumnType("TEXT");
 
@@ -37,18 +40,15 @@ namespace Persistence.Migrations
                     b.Property<int>("MaterialId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("PersonId")
-                        .HasColumnType("INTEGER");
-
                     b.HasKey("Id");
+
+                    b.HasIndex("ClientId");
 
                     b.HasIndex("DestinationId");
 
                     b.HasIndex("DriverId");
 
                     b.HasIndex("MaterialId");
-
-                    b.HasIndex("PersonId");
 
                     b.ToTable("CarLoads");
                 });
@@ -233,6 +233,12 @@ namespace Persistence.Migrations
 
             modelBuilder.Entity("Domain.CarLoad", b =>
                 {
+                    b.HasOne("Domain.Client", "Client")
+                        .WithMany()
+                        .HasForeignKey("ClientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Domain.Destination", "Destination")
                         .WithMany()
                         .HasForeignKey("DestinationId")
@@ -251,19 +257,13 @@ namespace Persistence.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Person", "Person")
-                        .WithMany()
-                        .HasForeignKey("PersonId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("Client");
 
                     b.Navigation("Destination");
 
                     b.Navigation("Driver");
 
                     b.Navigation("Material");
-
-                    b.Navigation("Person");
                 });
 
             modelBuilder.Entity("Domain.IdentityCard", b =>

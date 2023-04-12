@@ -53,6 +53,7 @@ namespace Api
             services.AddScoped<IDriverPersist, DriverPersist>();
             services.AddScoped<IDriverService, DriverService>();
             services.AddScoped<IClientService, ClientService>();
+            services.AddScoped<ICarLoadService,CarLoadService>();
 
             services.AddCors();
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo { Title = "Api", Version = "v1" }); });
