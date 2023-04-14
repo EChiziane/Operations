@@ -1,6 +1,8 @@
 <div class="content">
   <div class="table-content">
-    <button (click)="openModal(templateAdd,0)" mat-raised-button>Add</button>
+    <a routerLink="/destination/add">
+    <button  mat-raised-button>Add</button>
+    </a>
     <table [dataSource]="destinations" class="mat-elevation-z8" mat-table>
 
       <!-- Position Column -->
@@ -44,9 +46,9 @@
 
 <ng-template #template>
   <div class="modal-body text-center">
-    <p>Tem certeza que quer deletar este Evento?</p>
-    <button (click)="confirm(1)" color="primary" mat-raised-button>Sim</button>
-    <button (click)="decline()" color="warn" mat-raised-button>Nao</button>
+    <p>Are you sure you want to delete this Destination?</p>
+    <button (click)="confirm(1)" color="primary" mat-raised-button>Yes</button>
+    <button (click)="decline()" color="warn" mat-raised-button>No</button>
   </div>
 </ng-template>
 

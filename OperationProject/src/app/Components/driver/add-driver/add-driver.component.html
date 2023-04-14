@@ -1,0 +1,34 @@
+<mat-card>
+  <mat-card-title>New Driver</mat-card-title>
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>First name</mat-label>
+      <input matInput
+             [(ngModel)]="driver.firstName" name="finame"
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Last Name</mat-label>
+      <input matInput
+             [(ngModel)]="driver.lastName" name="laname">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Telephone</mat-label>
+      <span matPrefix>+258 &nbsp;</span>
+      <input
+        type="tel"
+        matInput
+        placeholder="555-555-1234"
+        [(ngModel)]="driver.mobile" name="mobile">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+
+    <div class="modal-body text-center">
+      <button (click)="createDriver()" color="primary" mat-raised-button>Add</button>
+      <button  color="warn" mat-raised-button>cancel</button>
+    </div>
+  </form>
+</mat-card>
+
+

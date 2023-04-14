@@ -32,6 +32,8 @@ import { CarLoadComponent } from './Components/car-load/car-load.component';
 import { AddClientComponent } from './Components/client/add-client/add-client.component';
 import {MatCardModule} from "@angular/material/card";
 import {FormsModule} from "@angular/forms";
+import {AddDestinationComponent} from "./Components/destination/add-destination/add-destination.component";
+import { AddDriverComponent } from './Components/driver/add-driver/add-driver.component';
 
 
 @NgModule({
@@ -45,7 +47,9 @@ import {FormsModule} from "@angular/forms";
     ClientComponent,
     DriverComponent,
     CarLoadComponent,
-    AddClientComponent
+    AddClientComponent,
+ AddDestinationComponent,
+ AddDriverComponent
   ],
   imports: [
     BrowserModule,

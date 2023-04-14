@@ -1,0 +1,24 @@
+<mat-card>
+  <mat-card-title>Destination</mat-card-title>
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Code</mat-label>
+      <input matInput
+             [(ngModel)]="destination.code" name="code"
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Description</mat-label>
+      <input matInput
+             [(ngModel)]="destination.description" name="description">
+    </mat-form-field>
+
+
+    <div class="modal-body text-center">
+      <button (click)="createDestination()" color="primary" mat-raised-button>Add</button>
+      <button  color="warn" mat-raised-button>cancel</button>
+    </div>
+  </form>
+</mat-card>
+
+

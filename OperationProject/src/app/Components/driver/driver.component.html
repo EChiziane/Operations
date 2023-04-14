@@ -1,6 +1,8 @@
 <div class="content">
   <div class="table-content">
-    <button (click)="openModal(templateAdd)" mat-raised-button>Add</button>
+    <a routerLink="/driver/add">
+    <button mat-raised-button>Add</button>
+    </a>
     <table [dataSource]="drivers" class="mat-elevation-z8" mat-table>
 
       <!-- Position Column -->
