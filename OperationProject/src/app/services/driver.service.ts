@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 
-import {Observable} from "rxjs";
+import {Observable, take} from "rxjs";
 import {HttpClient} from "@angular/common/http";
 import {Driver} from "../Models/driver";
+
 
 
 @Injectable({
@@ -20,4 +21,8 @@ export class DriverService {
   public getDriverById(id: number): Observable<Driver> {
     return this.http.get<Driver>(`${this.baseURL}/${id}`);
   }
+  public addDriver(driver:Driver):Observable<Driver>{
+    return  this.http.post<Driver>(this.baseURL,driver).pipe(take(1));
+  }
+
 }

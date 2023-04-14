@@ -1,10 +1,16 @@
+
 .table-content{
-  max-width: 80%;
+
+}
+.mat-elevation-z8{
+  max-height: 80%;
   margin-left: 10%;
+  overflow: scroll;
 }
 
 .table-content button{
   margin-bottom: 1%;
+
 }
 .example-form p{
   text-align: center;
@@ -21,4 +27,14 @@
 .action-button button{
   margin: 0 4%;
   width: 40%;
+}
+
+.mat-elevation-z8 td{
+
+}
+.modal-content{
+  width: 200%;
+}
+a{
+
 }

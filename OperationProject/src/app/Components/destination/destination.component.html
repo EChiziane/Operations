@@ -1,6 +1,6 @@
 <div class="content">
   <div class="table-content">
-    <button (click)="openModal(templateAdd)" mat-raised-button>Add</button>
+    <button (click)="openModal(templateAdd,0)" mat-raised-button>Add</button>
     <table [dataSource]="destinations" class="mat-elevation-z8" mat-table>
 
       <!-- Position Column -->
@@ -25,8 +25,8 @@
       <ng-container matColumnDef="Edit">
         <th *matHeaderCellDef mat-header-cell> Edit</th>
         <td *matCellDef="let element" mat-cell>
-          <mat-icon (click)="openModal(templateAdd)">edit</mat-icon>
-          <mat-icon (click)="openModal(template)">delete</mat-icon>
+          <mat-icon (click)="openModal(templateAdd,element.id)">edit</mat-icon>
+          <mat-icon (click)="openModal(template,element.id)">delete</mat-icon>
         </td>
       </ng-container>
 

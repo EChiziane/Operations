@@ -54,9 +54,10 @@ namespace Api.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             try
-            {
+            { var client = await _clientService.GetClientByIdAsync(id);
+                if (client is null) return NotFound("User Type not Found");
                 return await _clientService.DeleteClient(id)
-                    ? Ok("Deletado")
+                    ? Ok(client)
                     : BadRequest("User was deleted");
             }
             catch (Exception e)

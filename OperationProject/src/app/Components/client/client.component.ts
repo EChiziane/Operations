@@ -17,6 +17,7 @@ export class ClientComponent {
   public clientsFiltrados: Client[] = [];
   private filtroListado = '';
   displayedColumns: string[] = ['Id', 'FirstName', 'LastName', 'Edit'];
+private clientId=0;
 
   constructor(private clientService: ClientService,
               public dialog: MatDialog,
@@ -56,13 +57,21 @@ export class ClientComponent {
     })
   }
 
+  public deleteClient(id:number):void{
+    this.clientService.deleteClient(id).subscribe(
+      clientId=>this.getClients()
+    )
+  }
 
-  openModal(template: TemplateRef<any>): void {
+
+  openModal(template: TemplateRef<any>,clientId:number): void {
+    this.clientId=clientId;
     this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
   }
 
   confirm(selected:number): void {
     if(selected==1)
+this.deleteClient(this.clientId);
       this.modalRef?.hide();
   }
 

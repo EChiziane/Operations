@@ -54,9 +54,10 @@ namespace Api.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             try
-            {
+            {var driver = await _driverService.GetDriverByIdAsync(id);
+                if (driver is null) return NotFound("User Type not Found");
                 return await _driverService.DeleteDriver(id)
-                    ? Ok("Deletado")
+                    ? Ok(driver)
                     : BadRequest("User was deleted");
             }
             catch (Exception e)

@@ -55,12 +55,13 @@ namespace Api.Controllers
         {
             try
             {
+                
                 var carload = await _carLoadService.GetCarLoadByIdAsync(id,
                     false,
                     false,
                     false);
                 return await _carLoadService.DeleteCarLoad(id)
-                    ? Ok("Deleted")
+                    ? Ok(carload)
                     : BadRequest("CarLoad deleted");
             }
             catch (Exception e)

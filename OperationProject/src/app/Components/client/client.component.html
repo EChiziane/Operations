@@ -1,6 +1,7 @@
 <div class="content">
   <div class="table-content">
-    <button (click)="openModal(templateAdd)" mat-raised-button>Add</button>
+    <a routerLink="/client/add"> <button color="" mat-raised-button>Add</button></a>
+
     <table [dataSource]="clients" class="mat-elevation-z8" mat-table>
 
       <!-- Position Column -->
@@ -25,8 +26,8 @@
       <ng-container matColumnDef="Edit">
         <th *matHeaderCellDef mat-header-cell> Edit</th>
         <td *matCellDef="let element" mat-cell>
-          <mat-icon (click)="openModal(templateAdd)">edit</mat-icon>
-          <mat-icon (click)="openModal(template)">delete</mat-icon>
+          <mat-icon (click)="openModal(templateAdd,element.id)">edit</mat-icon>
+          <mat-icon (click)="openModal(template,element.id)">delete</mat-icon>
         </td>
       </ng-container>
 
@@ -50,8 +51,8 @@
   </div>
 </ng-template>
 
-<ng-template #templateAdd>
-  <form class="example-form">
+<ng-template  #templateAdd>
+  <!--<form class="example-form">
     <br>
     <p>Create Destination</p>
     <mat-form-field class="example-full-width">
@@ -63,7 +64,8 @@
       <mat-label>Description</mat-label>
       <input matInput placeholder="Ex. Maputo" value="">
     </mat-form-field>
-  </form>
+  </form>-->
+  <app-add-client></app-add-client>
   <div class="action-button">
     <button (click)="confirm(2)" color="primary" mat-raised-button>Save</button>
     <button (click)="decline()" color="warn" mat-raised-button>Cancel</button>

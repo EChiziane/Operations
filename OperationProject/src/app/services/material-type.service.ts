@@ -25,4 +25,7 @@ baseURL= 'https://localhost:5001/api/MaterialType';
   public getMaterialTypeByCode(code: string): Observable<MaterialType[]> {
     return this.http.get<MaterialType[]>(`${this.baseURL}/code/${code}`);
   }
+  public addMaterial(materialType:MaterialType):Observable<MaterialType>{
+    return  this.http.post<MaterialType>(this.baseURL,materialType).pipe(take(1));
+  }
 }

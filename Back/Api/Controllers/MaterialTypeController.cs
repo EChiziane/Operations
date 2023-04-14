@@ -105,9 +105,10 @@ namespace Api.Controllers
         public async Task<IActionResult> DeleteMaterialType(int id)
         {
             try
-            {
+            {  var materialType = await _materialTypeService.GetMaterialTypeByIdAsync(id);
+                if (materialType is null) return NotFound("Material Type Not Found");
                 return await _materialTypeService.DeleteMaterialType(id)
-                    ? Ok("Deletado")
+                    ? Ok(materialType)
                     : BadRequest("MaterialType was deleted");
             }
             catch (Exception e)

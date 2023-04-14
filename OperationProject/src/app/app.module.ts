@@ -29,6 +29,9 @@ import {MatPaginatorModule} from "@angular/material/paginator";
 import { ClientComponent } from './Components/client/client.component';
 import { DriverComponent } from './Components/driver/driver.component';
 import { CarLoadComponent } from './Components/car-load/car-load.component';
+import { AddClientComponent } from './Components/client/add-client/add-client.component';
+import {MatCardModule} from "@angular/material/card";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -41,7 +44,8 @@ import { CarLoadComponent } from './Components/car-load/car-load.component';
     DestinationComponent,
     ClientComponent,
     DriverComponent,
-    CarLoadComponent
+    CarLoadComponent,
+    AddClientComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +67,9 @@ import { CarLoadComponent } from './Components/car-load/car-load.component';
     MatInputModule,
     MatSelectModule,
     AppRoutingModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatCardModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

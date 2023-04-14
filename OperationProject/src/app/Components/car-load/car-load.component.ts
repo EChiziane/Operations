@@ -16,6 +16,7 @@ export class CarLoadComponent {
   public carloadsFiltrados: CarLoad[] = [];
   private filtroListado = '';
   displayedColumns: string[] = ['Id', 'Destination', 'Driver','Client', 'Status','Amount','Date','Edit'];
+private carloadId=0;
 
   constructor(private carloadService: CarLoadService,
               public dialog: MatDialog,
@@ -56,13 +57,24 @@ export class CarLoadComponent {
   }
 
 
-  openModal(template: TemplateRef<any>): void {
+  openModal(template: TemplateRef<any>, carloadId:number): void {
+    this.carloadId=carloadId;
     this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
   }
 
+  public deleteCarload(id:number){
+    this.carloadService.DeleteCarLoad(id)
+      .subscribe(carload=>{
+        this.getCarLoads()
+      })
+  }
+
+
   confirm(selected:number): void {
-    if(selected==1)
+    if(selected==1) {
+      this.deleteCarload(this.carloadId)
       this.modalRef?.hide();
+    }
   }
 
   decline(): void {

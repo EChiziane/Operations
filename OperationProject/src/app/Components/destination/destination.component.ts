@@ -1,7 +1,6 @@
 import {Component, OnInit, TemplateRef} from '@angular/core';
 import {Destination} from "../../Models/Destination";
 import {DestinationService} from "../../services/destination.service";
-import {MatTableDataSource} from "@angular/material/table";
 import {MatDialog} from "@angular/material/dialog";
 import {BsModalRef, BsModalService} from "ngx-bootstrap/modal";
 
@@ -16,6 +15,7 @@ export class DestinationComponent implements OnInit{
   public destinationsFiltrados: Destination[] = [];
   private filtroListado = '';
   displayedColumns: string[] = ['Id', 'Code', 'Description', 'Edit'];
+private destinationId=0;
 
   constructor(private destinationService: DestinationService,
               public dialog: MatDialog,
@@ -54,13 +54,20 @@ export class DestinationComponent implements OnInit{
     })
   }
 
+  public deleteDestination(id:number):void{
+    this.destinationService.deleteDestination(id)
+      .subscribe(destination=>
+        this.getDestinations())
+  }
 
-  openModal(template: TemplateRef<any>): void {
+  openModal(template: TemplateRef<any>, destinationId:number): void {
+    this.destinationId=destinationId;
     this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
   }
 
   confirm(selected:number): void {
     if(selected==1)
+     this.deleteDestination(this.destinationId)
     this.modalRef?.hide();
   }
 

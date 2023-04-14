@@ -90,8 +90,10 @@ namespace Api.Controllers
         {
             try
             {
+                var operationType = await _operationTypeService.GetOperationTypeByIdAsync(id);
+                if (operationType is null) return NotFound("Operation Type not Found");
                 return await _operationTypeService.Delete(id)
-                    ? Ok("Deletado")
+                    ? Ok(operationType)
                     : BadRequest("OperationType was deleted");
             }
             catch (Exception e)

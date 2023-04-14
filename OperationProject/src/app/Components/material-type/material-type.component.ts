@@ -65,6 +65,7 @@ export class MaterialTypeComponent {
     this.materialTypeId=materialTypeId;
     this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
   }
+
   confirm(selected:number): void {
     if(selected==1) {
       this.deleteMaterialType(this.materialTypeId);
