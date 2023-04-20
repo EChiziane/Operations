@@ -1,0 +1,27 @@
+<mat-card>
+  <mat-card-title>Material</mat-card-title>
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Price</mat-label>
+      <input [(ngModel)]="material.price" matInput
+             name="price" type="number"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Select an option</mat-label>
+      <mat-select (selectionChange)=selectMaterialType() [(value)]="selectedMaterialType">
+        <mat-option>None</mat-option>
+        <mat-option *ngFor="let materialTypes of materialTypes"
+                    [value]="materialTypes.id">{{materialTypes.description}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <div class="modal-body text-center">
+      <button (click)="createMaterial()" color="primary" mat-raised-button>Add</button>
+      <button color="warn" mat-raised-button>cancel</button>
+    </div>
+  </form>
+</mat-card>
+
+

@@ -1,6 +1,8 @@
 <div class="content">
   <div class="table-content">
-    <button (click)="openModal(templateAdd,0)" mat-raised-button>Add</button>
+    <a routerLink="/carload/add">
+      <button mat-raised-button>Add</button>
+    </a>
     <table [dataSource]="carloads" class="mat-elevation-z8" mat-table>
 
       <!-- Position Column -->
@@ -28,7 +30,7 @@
 
       <ng-container matColumnDef="Status">
         <th *matHeaderCellDef mat-header-cell>Satus</th>
-        <td *matCellDef="let element" mat-cell> Done </td>
+        <td *matCellDef="let element" mat-cell> Done</td>
       </ng-container>
 
       <ng-container matColumnDef="Amount">
@@ -38,7 +40,7 @@
 
       <ng-container matColumnDef="Date">
         <th *matHeaderCellDef mat-header-cell>Date</th>
-        <td *matCellDef="let element" mat-cell> {{element.date.substring(0,10)}} </td>
+        <td *matCellDef="let element" mat-cell> {{element.date.substring(0, 10)}} </td>
       </ng-container>
       <!-- Symbol Column -->
       <ng-container matColumnDef="Edit">

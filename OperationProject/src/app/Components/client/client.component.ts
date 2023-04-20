@@ -15,9 +15,9 @@ export class ClientComponent {
   modalRef?: BsModalRef;
   public clients: Client[] = [];
   public clientsFiltrados: Client[] = [];
-  private filtroListado = '';
   displayedColumns: string[] = ['Id', 'FirstName', 'LastName', 'Edit'];
-private clientId=0;
+  private filtroListado = '';
+  private clientId = 0;
 
   constructor(private clientService: ClientService,
               public dialog: MatDialog,
@@ -36,43 +36,43 @@ private clientId=0;
   public filtrarClient(filtrarPor: string): Client[] {
     filtrarPor = filtrarPor.toLocaleLowerCase();
     return this.clients.filter(
-      client => client.firstName.toLocaleLowerCase().indexOf(filtrarPor) !== -1||
-         client.lastName.toLocaleLowerCase().indexOf(filtrarPor) !== -1
+      client => client.firstName.toLocaleLowerCase().indexOf(filtrarPor) !== -1 ||
+        client.lastName.toLocaleLowerCase().indexOf(filtrarPor) !== -1
     );
   }
 
-  public ngOnInit():void{
+  public ngOnInit(): void {
     this.getClients()
   }
 
-  public getClients():void{
+  public getClients(): void {
     this.clientService.getClient().subscribe({
-      next:(clients:Client[])=>{
-        this.clients=clients;
-        this.clientsFiltrados=this.clients
+      next: (clients: Client[]) => {
+        this.clients = clients;
+        this.clientsFiltrados = this.clients
       },
-      error:(error:any)=>{
+      error: (error: any) => {
 
       },
     })
   }
 
-  public deleteClient(id:number):void{
+  public deleteClient(id: number): void {
     this.clientService.deleteClient(id).subscribe(
-      clientId=>this.getClients()
+      clientId => this.getClients()
     )
   }
 
 
-  openModal(template: TemplateRef<any>,clientId:number): void {
-    this.clientId=clientId;
+  openModal(template: TemplateRef<any>, clientId: number): void {
+    this.clientId = clientId;
     this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
   }
 
-  confirm(selected:number): void {
-    if(selected==1)
-this.deleteClient(this.clientId);
-      this.modalRef?.hide();
+  confirm(selected: number): void {
+    if (selected == 1)
+      this.deleteClient(this.clientId);
+    this.modalRef?.hide();
   }
 
   decline(): void {

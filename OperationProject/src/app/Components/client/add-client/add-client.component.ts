@@ -1,7 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Client} from "../../../Models/client";
-import {FormGroup} from "@angular/forms";
 import {ClientService} from "../../../services/client.service";
 import {Router} from "@angular/router";
 
@@ -12,21 +11,22 @@ import {Router} from "@angular/router";
 })
 export class AddClientComponent {
 
-  client:Client={
+  client: Client = {
     id: 0,
-    firstName:'',
-    lastName:'',
-    mobile:''
+    firstName: '',
+    lastName: '',
+    mobile: ''
   };
-  constructor(private http:HttpClient,
-              private clientService:ClientService,
+
+  constructor(private http: HttpClient,
+              private clientService: ClientService,
               private router: Router) {
   }
 
-  public createClient():void{
-    this.clientService.addClient(this.client!).subscribe(()=>{
+  public createClient(): void {
+    this.clientService.addClient(this.client!).subscribe(() => {
       this.router.navigate(['/client'])
     });
-    }
+  }
 
 }

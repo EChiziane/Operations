@@ -6,16 +6,18 @@
   height: 90%;
   margin: 0;
 }
+
 .app-sidenav {
   width: 230px;
 }
+
 .app-sidenav-content {
-position: fixed;
+  position: fixed;
   align-items: center;
   justify-content: center;
   padding: 5%;
-width: 80%;
-height: 90%;
+  width: 80%;
+  height: 90%;
   overflow: scroll;
-overflow-y: auto;
+  overflow-y: auto;
 }

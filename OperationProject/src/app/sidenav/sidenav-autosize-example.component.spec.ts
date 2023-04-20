@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { SidenavAutosizeExample } from './sidenav-autosize-example.component';
+import {SidenavAutosizeExample} from './sidenav-autosize-example.component';
 
 describe('SidenavComponent', () => {
   let component: SidenavAutosizeExample;
@@ -8,9 +8,9 @@ describe('SidenavComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SidenavAutosizeExample ]
+      declarations: [SidenavAutosizeExample]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(SidenavAutosizeExample);
     component = fixture.componentInstance;

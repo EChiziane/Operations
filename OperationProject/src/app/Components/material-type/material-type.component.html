@@ -1,6 +1,8 @@
 <div class="content">
   <div class="table-content">
-    <button (click)="openModal(templateAdd,0)" mat-raised-button>Add</button>
+    <a routerLink="/material-type/add">
+      <button mat-raised-button>Add</button>
+    </a>
     <table [dataSource]="materialTypes" class="mat-elevation-z8" mat-table>
 
       <!-- Position Column -->
@@ -26,13 +28,13 @@
         <th *matHeaderCellDef mat-header-cell> Edit</th>
         <td *matCellDef="let element" mat-cell>
           <mat-icon (click)="openModal(templateAdd,element.id)">edit</mat-icon>
-          <mat-icon (click)="openModal(template, element.id)" >delete</mat-icon>
+          <mat-icon (click)="openModal(template, element.id)">delete</mat-icon>
         </td>
       </ng-container>
 
       <mat-paginator [pageSizeOptions]="[5, 10, 20]"
-                     showFirstLastButtons
-                     aria-label="Select page of periodic elements">
+                     aria-label="Select page of periodic elements"
+                     showFirstLastButtons>
       </mat-paginator>
 
       <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>

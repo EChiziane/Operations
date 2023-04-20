@@ -14,9 +14,9 @@ export class MaterialComponent {
   selected = 'option2';
   public materials: Material[] = [];
   public materialsFiltrados: Material[] = [];
-  private filtroListado = '';
   displayedColumns: string[] = ['Id', 'Price', 'Description', 'Edit'];
   public materialId = 0;
+  private filtroListado = '';
 
   constructor(private materialService: MaterialService,
               public dialog: MatDialog,
@@ -55,20 +55,20 @@ export class MaterialComponent {
     })
   }
 
-  public deleteMaterial(id:number){
+  public deleteMaterial(id: number) {
     this.materialService.DeleteMaterial(id)
-      .subscribe(material=>{
+      .subscribe(material => {
         this.getMaterials()
       })
   }
 
-  openModal(template: TemplateRef<any>, materialId:number): void {
-    this.materialId=materialId;
+  openModal(template: TemplateRef<any>, materialId: number): void {
+    this.materialId = materialId;
     this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
   }
 
-  confirm(selected:number): void {
-    if(selected==1) {
+  confirm(selected: number): void {
+    if (selected == 1) {
       this.deleteMaterial(this.materialId);
       this.modalRef?.hide();
     }

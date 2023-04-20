@@ -1,7 +1,7 @@
 import {MaterialType} from "./Material Type";
 
-export interface Material{
+export interface Material {
   id: number;
-price: number;
+  price: number;
   materialType: MaterialType;
 }

@@ -14,9 +14,9 @@ export class CarLoadComponent {
   modalRef?: BsModalRef;
   public carloads: CarLoad[] = [];
   public carloadsFiltrados: CarLoad[] = [];
+  displayedColumns: string[] = ['Id', 'Destination', 'Driver', 'Client', 'Status', 'Amount', 'Date', 'Edit'];
   private filtroListado = '';
-  displayedColumns: string[] = ['Id', 'Destination', 'Driver','Client', 'Status','Amount','Date','Edit'];
-private carloadId=0;
+  private carloadId = 0;
 
   constructor(private carloadService: CarLoadService,
               public dialog: MatDialog,
@@ -35,43 +35,43 @@ private carloadId=0;
   public filtrarCarLoad(filtrarPor: string): CarLoad[] {
     filtrarPor = filtrarPor.toLocaleLowerCase();
     return this.carloads.filter(
-      carload => carload.client.firstName.toLocaleLowerCase().indexOf(filtrarPor) !== -1||
+      carload => carload.client.firstName.toLocaleLowerCase().indexOf(filtrarPor) !== -1 ||
         carload.client.lastName.toLocaleLowerCase().indexOf(filtrarPor) !== -1
     );
   }
 
-  public ngOnInit():void{
+  public ngOnInit(): void {
     this.getCarLoads()
   }
 
-  public getCarLoads():void{
+  public getCarLoads(): void {
     this.carloadService.getCarLoads().subscribe({
-      next:(carloads:CarLoad[])=>{
-        this.carloads=carloads;
-        this.carloadsFiltrados=this.carloads
+      next: (carloads: CarLoad[]) => {
+        this.carloads = carloads;
+        this.carloadsFiltrados = this.carloads
       },
-      error:(error:any)=>{
+      error: (error: any) => {
 
       },
     })
   }
 
 
-  openModal(template: TemplateRef<any>, carloadId:number): void {
-    this.carloadId=carloadId;
+  openModal(template: TemplateRef<any>, carloadId: number): void {
+    this.carloadId = carloadId;
     this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
   }
 
-  public deleteCarload(id:number){
+  public deleteCarload(id: number) {
     this.carloadService.DeleteCarLoad(id)
-      .subscribe(carload=>{
+      .subscribe(carload => {
         this.getCarLoads()
       })
   }
 
 
-  confirm(selected:number): void {
-    if(selected==1) {
+  confirm(selected: number): void {
+    if (selected == 1) {
       this.deleteCarload(this.carloadId)
       this.modalRef?.hide();
     }

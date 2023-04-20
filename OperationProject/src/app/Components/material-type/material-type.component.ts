@@ -13,10 +13,9 @@ export class MaterialTypeComponent {
   modalRef?: BsModalRef;
   public materialTypes: MaterialType[] = [];
   public materialTypesFiltrados: MaterialType[] = [];
-  private filtroListado = '';
   displayedColumns: string[] = ['Id', 'Code', 'Description', 'Edit'];
-
   public materialTypeId = 0;
+  private filtroListado = '';
 
   constructor(private materialTypeService: MaterialTypeService,
               public dialog: MatDialog,
@@ -38,36 +37,37 @@ export class MaterialTypeComponent {
       materialType => materialType.description.toLocaleLowerCase().indexOf(filtrarPor) !== -1
     );
   }
-  public ngOnInit():void{
- this.getMaterialTypes()
+
+  public ngOnInit(): void {
+    this.getMaterialTypes()
   }
 
-  public getMaterialTypes():void{
+  public getMaterialTypes(): void {
     this.materialTypeService.getMaterialType().subscribe({
-      next:(meterialTypes:MaterialType[])=>{
-        this.materialTypes=meterialTypes;
-        this.materialTypesFiltrados=this.materialTypes
+      next: (meterialTypes: MaterialType[]) => {
+        this.materialTypes = meterialTypes;
+        this.materialTypesFiltrados = this.materialTypes
       },
-      error:(error:any)=>{
+      error: (error: any) => {
 
       },
     })
   }
 
-  public deleteMaterialType(id:number){
+  public deleteMaterialType(id: number) {
     this.materialTypeService.DeleteMaterialType(id)
-      .subscribe(materialType=>{
+      .subscribe(materialType => {
         this.getMaterialTypes()
       })
   }
 
-  openModal(template: TemplateRef<any>, materialTypeId:number): void {
-    this.materialTypeId=materialTypeId;
+  openModal(template: TemplateRef<any>, materialTypeId: number): void {
+    this.materialTypeId = materialTypeId;
     this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
   }
 
-  confirm(selected:number): void {
-    if(selected==1) {
+  confirm(selected: number): void {
+    if (selected == 1) {
       this.deleteMaterialType(this.materialTypeId);
       this.modalRef?.hide();
     }

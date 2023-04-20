@@ -1,0 +1,56 @@
+<mat-card>
+  <mat-card-title>New Carload</mat-card-title>
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Ammount</mat-label>
+      <input [(ngModel)]="carload.amount"
+             matInput name="amount"
+      />
+    </mat-form-field>
+
+
+    <mat-form-field appearance="fill">
+      <mat-label>Material</mat-label>
+      <mat-select (selectionChange)=selectMaterial() [(value)]="selectedMaterial">
+        <mat-option>None</mat-option>
+        <mat-option *ngFor="let materials of materials"
+                    [value]="materials.id">{{materials.materialType.description}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Client</mat-label>
+      <mat-select (selectionChange)=selectClient() [(value)]="selectedClient">
+        <mat-option>None</mat-option>
+        <mat-option *ngFor="let clients of clients"
+                    [value]="clients.id">{{clients.firstName}} {{clients.lastName}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Driver</mat-label>
+      <mat-select (selectionChange)=selectDriver() [(value)]="selectedDriver">
+        <mat-option>None</mat-option>
+        <mat-option *ngFor="let drivers of drivers"
+                    [value]="drivers.id">{{drivers.firstName}} {{drivers.lastName}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Destination</mat-label>
+      <mat-select (selectionChange)=selectDestination() [(value)]="selectedDestination">
+        <mat-option>None</mat-option>
+        <mat-option *ngFor="let destinations of destinations"
+                    [value]="destinations.id">{{destinations.description}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+
+    <div class="modal-body text-center">
+      <button (click)="createCarLoad()" color="primary" mat-raised-button>Add</button>
+      <button color="warn" mat-raised-button>cancel</button>
+    </div>
+  </form>
+</mat-card>
+
+

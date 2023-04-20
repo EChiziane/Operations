@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {Router} from "@angular/router";
 import {DestinationService} from "../../../services/destination.service";
 import {Destination} from "../../../Models/Destination";
@@ -9,18 +9,18 @@ import {Destination} from "../../../Models/Destination";
   styleUrls: ['./add-destination.component.css']
 })
 export class AddDestinationComponent {
- destination:Destination={
-    id:0,
-    code:0,
-   description:''
+  destination: Destination = {
+    id: 0,
+    code: 0,
+    description: ''
   }
 
-public constructor(private router:Router,
-private destinationsService:DestinationService) {
-}
+  public constructor(private router: Router,
+                     private destinationsService: DestinationService) {
+  }
 
-public createDestination():void{
-this.destinationsService.addDestination(this.destination).subscribe(()=>
-this.router.navigate(['/destination']))
-}
+  public createDestination(): void {
+    this.destinationsService.addDestination(this.destination).subscribe(() =>
+      this.router.navigate(['/destination']))
+  }
 }

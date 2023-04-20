@@ -1,21 +1,21 @@
 <mat-card>
-  <mat-card-title>Destination</mat-card-title>
+  <mat-card-title>MaterialType</mat-card-title>
   <form class="example-form">
     <mat-form-field class="example-full-width">
       <mat-label>Code</mat-label>
-      <input [(ngModel)]="destination.code"
+      <input [(ngModel)]="materialType.code"
              matInput name="code"
       />
     </mat-form-field>
     <mat-form-field class="example-full-width">
       <mat-label>Description</mat-label>
-      <input [(ngModel)]="destination.description"
+      <input [(ngModel)]="materialType.description"
              matInput name="description">
     </mat-form-field>
 
 
     <div class="modal-body text-center">
-      <button (click)="createDestination()" color="primary" mat-raised-button>Add</button>
+      <button (click)="createMaterialType()" color="primary" mat-raised-button>Add</button>
       <button color="warn" mat-raised-button>cancel</button>
     </div>
   </form>

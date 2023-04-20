@@ -1,6 +1,8 @@
 <div class="content">
   <div class="table-content">
-    <a routerLink="/client/add"> <button color="" mat-raised-button>Add</button></a>
+    <a routerLink="/client/add">
+      <button color="" mat-raised-button>Add</button>
+    </a>
 
     <table [dataSource]="clients" class="mat-elevation-z8" mat-table>
 
@@ -51,7 +53,7 @@
   </div>
 </ng-template>
 
-<ng-template  #templateAdd>
+<ng-template #templateAdd>
   <!--<form class="example-form">
     <br>
     <p>Create Destination</p>

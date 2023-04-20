@@ -1,24 +1,28 @@
-.table-content{
+.table-content {
   max-width: 80%;
   margin-left: 10%;
 }
 
-.table-content button{
+.table-content button {
   margin-bottom: 1%;
 }
-.example-form p{
+
+.example-form p {
   text-align: center;
   font-size: 14px;
 }
-.example-form mat-form-field{
+
+.example-form mat-form-field {
   width: 80%;
   margin-left: 10%;
 }
-.action-button{
+
+.action-button {
   padding: 5%;
   margin-left: 4%;
 }
-.action-button button{
+
+.action-button button {
   margin: 0 4%;
   width: 40%;
 }

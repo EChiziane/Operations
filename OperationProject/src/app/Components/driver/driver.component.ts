@@ -15,8 +15,8 @@ export class DriverComponent {
   modalRef?: BsModalRef;
   public drivers: Driver[] = [];
   public driversFiltrados: Driver[] = [];
-  private filtroListado = '';
   displayedColumns: string[] = ['Id', 'FirstName', 'LastName', 'Edit'];
+  private filtroListado = '';
 
   constructor(private driverService: DriverService,
               public dialog: MatDialog,
@@ -35,22 +35,22 @@ export class DriverComponent {
   public filtrarDriver(filtrarPor: string): Driver[] {
     filtrarPor = filtrarPor.toLocaleLowerCase();
     return this.drivers.filter(
-      driver => driver.firstName.toLocaleLowerCase().indexOf(filtrarPor) !== -1||
+      driver => driver.firstName.toLocaleLowerCase().indexOf(filtrarPor) !== -1 ||
         driver.lastName.toLocaleLowerCase().indexOf(filtrarPor) !== -1
     );
   }
 
-  public ngOnInit():void{
+  public ngOnInit(): void {
     this.getDrivers()
   }
 
-  public getDrivers():void{
+  public getDrivers(): void {
     this.driverService.getDriver().subscribe({
-      next:(drivers:Driver[])=>{
-        this.drivers=drivers;
-        this.driversFiltrados=this.drivers
+      next: (drivers: Driver[]) => {
+        this.drivers = drivers;
+        this.driversFiltrados = this.drivers
       },
-      error:(error:any)=>{
+      error: (error: any) => {
 
       },
     })
@@ -61,8 +61,8 @@ export class DriverComponent {
     this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
   }
 
-  confirm(selected:number): void {
-    if(selected==1)
+  confirm(selected: number): void {
+    if (selected == 1)
       this.modalRef?.hide();
   }
 
