@@ -1,0 +1,115 @@
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Infrastructure.deps.json
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Infrastructure.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Infrastructure.pdb
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Application.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Domain.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Persistence.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Utility.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Application.pdb
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Persistence.pdb
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Domain.pdb
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Utility.pdb
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\en-US\Application.resources.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\pt-PT\Application.resources.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.AssemblyReference.cache
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\obj\Debug\net6.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfoInputs.cache
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfo.cs
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CoreCompileInputs.cache
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CopyComplete
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\obj\Debug\net6.0\Infrastructure.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
+D:\Projects\Gerenciador-de-Tarefas-Online\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Infrastructure.deps.json
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Infrastructure.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Infrastructure.pdb
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Application.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Domain.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Persistence.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Utility.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Application.pdb
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Persistence.pdb
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Domain.pdb
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\Utility.pdb
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\en-US\Application.resources.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\bin\Debug\net6.0\pt-PT\Application.resources.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.AssemblyReference.cache
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\obj\Debug\net6.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfoInputs.cache
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfo.cs
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CoreCompileInputs.cache
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CopyComplete
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\obj\Debug\net6.0\Infrastructure.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\bin\Debug\net6.0\Infrastructure.deps.json
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\bin\Debug\net6.0\Infrastructure.dll
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\bin\Debug\net6.0\Infrastructure.pdb
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\bin\Debug\net6.0\Application.dll
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\bin\Debug\net6.0\Domain.dll
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\bin\Debug\net6.0\Persistence.dll
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\bin\Debug\net6.0\Utility.dll
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\bin\Debug\net6.0\Application.pdb
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\bin\Debug\net6.0\Persistence.pdb
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\bin\Debug\net6.0\Domain.pdb
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\bin\Debug\net6.0\Utility.pdb
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\bin\Debug\net6.0\en-US\Application.resources.dll
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\bin\Debug\net6.0\pt-PT\Application.resources.dll
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\obj\Debug\net6.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfo.cs
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CopyComplete
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\obj\Debug\net6.0\Infrastructure.dll
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
+C:\Users\Root\RiderProjects\CMCTM\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll
+D:\Code\CMCTM\Infrastructure\bin\Debug\net6.0\Infrastructure.deps.json
+D:\Code\CMCTM\Infrastructure\bin\Debug\net6.0\Infrastructure.dll
+D:\Code\CMCTM\Infrastructure\bin\Debug\net6.0\Infrastructure.pdb
+D:\Code\CMCTM\Infrastructure\bin\Debug\net6.0\Application.dll
+D:\Code\CMCTM\Infrastructure\bin\Debug\net6.0\Domain.dll
+D:\Code\CMCTM\Infrastructure\bin\Debug\net6.0\Persistence.dll
+D:\Code\CMCTM\Infrastructure\bin\Debug\net6.0\Utility.dll
+D:\Code\CMCTM\Infrastructure\bin\Debug\net6.0\Application.pdb
+D:\Code\CMCTM\Infrastructure\bin\Debug\net6.0\Persistence.pdb
+D:\Code\CMCTM\Infrastructure\bin\Debug\net6.0\Domain.pdb
+D:\Code\CMCTM\Infrastructure\bin\Debug\net6.0\Utility.pdb
+D:\Code\CMCTM\Infrastructure\bin\Debug\net6.0\en-US\Application.resources.dll
+D:\Code\CMCTM\Infrastructure\bin\Debug\net6.0\pt-PT\Application.resources.dll
+D:\Code\CMCTM\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.AssemblyReference.cache
+D:\Code\CMCTM\Infrastructure\obj\Debug\net6.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\CMCTM\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfoInputs.cache
+D:\Code\CMCTM\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfo.cs
+D:\Code\CMCTM\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CoreCompileInputs.cache
+D:\Code\CMCTM\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CopyComplete
+D:\Code\CMCTM\Infrastructure\obj\Debug\net6.0\Infrastructure.dll
+D:\Code\CMCTM\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
+D:\Code\CMCTM\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
+D:\Code\CMCTM\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll
+D:\Code\Operations\Infrastructure\bin\Debug\net6.0\Infrastructure.deps.json
+D:\Code\Operations\Infrastructure\bin\Debug\net6.0\Infrastructure.dll
+D:\Code\Operations\Infrastructure\bin\Debug\net6.0\Infrastructure.pdb
+D:\Code\Operations\Infrastructure\bin\Debug\net6.0\Application.dll
+D:\Code\Operations\Infrastructure\bin\Debug\net6.0\Domain.dll
+D:\Code\Operations\Infrastructure\bin\Debug\net6.0\Persistence.dll
+D:\Code\Operations\Infrastructure\bin\Debug\net6.0\Utility.dll
+D:\Code\Operations\Infrastructure\bin\Debug\net6.0\Application.pdb
+D:\Code\Operations\Infrastructure\bin\Debug\net6.0\Persistence.pdb
+D:\Code\Operations\Infrastructure\bin\Debug\net6.0\Domain.pdb
+D:\Code\Operations\Infrastructure\bin\Debug\net6.0\Utility.pdb
+D:\Code\Operations\Infrastructure\bin\Debug\net6.0\en-US\Application.resources.dll
+D:\Code\Operations\Infrastructure\bin\Debug\net6.0\pt-PT\Application.resources.dll
+D:\Code\Operations\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.AssemblyReference.cache
+D:\Code\Operations\Infrastructure\obj\Debug\net6.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Operations\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfoInputs.cache
+D:\Code\Operations\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfo.cs
+D:\Code\Operations\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CoreCompileInputs.cache
+D:\Code\Operations\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CopyComplete
+D:\Code\Operations\Infrastructure\obj\Debug\net6.0\Infrastructure.dll
+D:\Code\Operations\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
+D:\Code\Operations\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
+D:\Code\Operations\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll

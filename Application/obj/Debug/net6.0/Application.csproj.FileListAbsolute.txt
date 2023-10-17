@@ -1,0 +1,160 @@
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.Resources.Categories.CreateCategory+CreateCategoryCommandHandler.en-US.resources
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.Resources.Categories.CreateCategory+CreateCategoryCommandHandler.pt-PT.resources
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.Resources.Categories.DeleteCategory+DeleteCategoryCommandHandler.en-US.resources
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.Resources.Categories.DeleteCategory+DeleteCategoryCommandHandler.pt-PT.resources
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.Resources.Categories.UpdateCategory+UpdateCategoryCommandHandler.en-US.resources
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.Resources.Categories.UpdateCategory+UpdateCategoryCommandHandler.pt-PT.resources
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.csproj.GenerateResource.cache
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\Application.deps.json
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\Application.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\Application.pdb
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\en-US\Application.resources.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\pt-PT\Application.resources.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\Domain.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\Persistence.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\Utility.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\Domain.pdb
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\Persistence.pdb
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\Utility.pdb
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\en-US\Application.resources.cs
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\en-US\Application.resources.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\pt-PT\Application.resources.cs
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\pt-PT\Application.resources.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\refint\Application.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.pdb
+D:\Projects\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\ref\Application.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\Application.deps.json
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\Application.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\Application.pdb
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\en-US\Application.resources.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\pt-PT\Application.resources.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\Domain.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\Persistence.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\Utility.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\Domain.pdb
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\Persistence.pdb
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\bin\Debug\net6.0\Utility.pdb
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.Resources.Categories.CreateCategory+CreateCategoryCommandHandler.en-US.resources
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.Resources.Categories.CreateCategory+CreateCategoryCommandHandler.pt-PT.resources
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.Resources.Categories.DeleteCategory+DeleteCategoryCommandHandler.en-US.resources
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.Resources.Categories.DeleteCategory+DeleteCategoryCommandHandler.pt-PT.resources
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.Resources.Categories.UpdateCategory+UpdateCategoryCommandHandler.en-US.resources
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.Resources.Categories.UpdateCategory+UpdateCategoryCommandHandler.pt-PT.resources
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.csproj.GenerateResource.cache
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\en-US\Application.resources.cs
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\en-US\Application.resources.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\pt-PT\Application.resources.cs
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\pt-PT\Application.resources.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\refint\Application.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\Application.pdb
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Application\obj\Debug\net6.0\ref\Application.dll
+C:\Users\Root\RiderProjects\CMCTM\Application\bin\Debug\net6.0\Application.deps.json
+C:\Users\Root\RiderProjects\CMCTM\Application\bin\Debug\net6.0\Application.dll
+C:\Users\Root\RiderProjects\CMCTM\Application\bin\Debug\net6.0\Application.pdb
+C:\Users\Root\RiderProjects\CMCTM\Application\bin\Debug\net6.0\en-US\Application.resources.dll
+C:\Users\Root\RiderProjects\CMCTM\Application\bin\Debug\net6.0\pt-PT\Application.resources.dll
+C:\Users\Root\RiderProjects\CMCTM\Application\bin\Debug\net6.0\Domain.dll
+C:\Users\Root\RiderProjects\CMCTM\Application\bin\Debug\net6.0\Persistence.dll
+C:\Users\Root\RiderProjects\CMCTM\Application\bin\Debug\net6.0\Utility.dll
+C:\Users\Root\RiderProjects\CMCTM\Application\bin\Debug\net6.0\Domain.pdb
+C:\Users\Root\RiderProjects\CMCTM\Application\bin\Debug\net6.0\Persistence.pdb
+C:\Users\Root\RiderProjects\CMCTM\Application\bin\Debug\net6.0\Utility.pdb
+C:\Users\Root\RiderProjects\CMCTM\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+C:\Users\Root\RiderProjects\CMCTM\Application\obj\Debug\net6.0\Application.Resources.Categories.CreateCategory+CreateCategoryCommandHandler.en-US.resources
+C:\Users\Root\RiderProjects\CMCTM\Application\obj\Debug\net6.0\Application.Resources.Categories.CreateCategory+CreateCategoryCommandHandler.pt-PT.resources
+C:\Users\Root\RiderProjects\CMCTM\Application\obj\Debug\net6.0\Application.Resources.Categories.DeleteCategory+DeleteCategoryCommandHandler.en-US.resources
+C:\Users\Root\RiderProjects\CMCTM\Application\obj\Debug\net6.0\Application.Resources.Categories.DeleteCategory+DeleteCategoryCommandHandler.pt-PT.resources
+C:\Users\Root\RiderProjects\CMCTM\Application\obj\Debug\net6.0\Application.Resources.Categories.UpdateCategory+UpdateCategoryCommandHandler.en-US.resources
+C:\Users\Root\RiderProjects\CMCTM\Application\obj\Debug\net6.0\Application.Resources.Categories.UpdateCategory+UpdateCategoryCommandHandler.pt-PT.resources
+C:\Users\Root\RiderProjects\CMCTM\Application\obj\Debug\net6.0\Application.csproj.GenerateResource.cache
+C:\Users\Root\RiderProjects\CMCTM\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Root\RiderProjects\CMCTM\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+C:\Users\Root\RiderProjects\CMCTM\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+C:\Users\Root\RiderProjects\CMCTM\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\Root\RiderProjects\CMCTM\Application\obj\Debug\net6.0\en-US\Application.resources.cs
+C:\Users\Root\RiderProjects\CMCTM\Application\obj\Debug\net6.0\en-US\Application.resources.dll
+C:\Users\Root\RiderProjects\CMCTM\Application\obj\Debug\net6.0\pt-PT\Application.resources.cs
+C:\Users\Root\RiderProjects\CMCTM\Application\obj\Debug\net6.0\pt-PT\Application.resources.dll
+C:\Users\Root\RiderProjects\CMCTM\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+C:\Users\Root\RiderProjects\CMCTM\Application\obj\Debug\net6.0\Application.dll
+C:\Users\Root\RiderProjects\CMCTM\Application\obj\Debug\net6.0\refint\Application.dll
+C:\Users\Root\RiderProjects\CMCTM\Application\obj\Debug\net6.0\Application.pdb
+C:\Users\Root\RiderProjects\CMCTM\Application\obj\Debug\net6.0\ref\Application.dll
+D:\Code\CMCTM\Application\bin\Debug\net6.0\Application.deps.json
+D:\Code\CMCTM\Application\bin\Debug\net6.0\Application.dll
+D:\Code\CMCTM\Application\bin\Debug\net6.0\Application.pdb
+D:\Code\CMCTM\Application\bin\Debug\net6.0\en-US\Application.resources.dll
+D:\Code\CMCTM\Application\bin\Debug\net6.0\pt-PT\Application.resources.dll
+D:\Code\CMCTM\Application\bin\Debug\net6.0\Domain.dll
+D:\Code\CMCTM\Application\bin\Debug\net6.0\Persistence.dll
+D:\Code\CMCTM\Application\bin\Debug\net6.0\Utility.dll
+D:\Code\CMCTM\Application\bin\Debug\net6.0\Domain.pdb
+D:\Code\CMCTM\Application\bin\Debug\net6.0\Persistence.pdb
+D:\Code\CMCTM\Application\bin\Debug\net6.0\Utility.pdb
+D:\Code\CMCTM\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+D:\Code\CMCTM\Application\obj\Debug\net6.0\Application.Resources.Categories.CreateCategory+CreateCategoryCommandHandler.en-US.resources
+D:\Code\CMCTM\Application\obj\Debug\net6.0\Application.Resources.Categories.CreateCategory+CreateCategoryCommandHandler.pt-PT.resources
+D:\Code\CMCTM\Application\obj\Debug\net6.0\Application.Resources.Categories.DeleteCategory+DeleteCategoryCommandHandler.en-US.resources
+D:\Code\CMCTM\Application\obj\Debug\net6.0\Application.Resources.Categories.DeleteCategory+DeleteCategoryCommandHandler.pt-PT.resources
+D:\Code\CMCTM\Application\obj\Debug\net6.0\Application.Resources.Categories.UpdateCategory+UpdateCategoryCommandHandler.en-US.resources
+D:\Code\CMCTM\Application\obj\Debug\net6.0\Application.Resources.Categories.UpdateCategory+UpdateCategoryCommandHandler.pt-PT.resources
+D:\Code\CMCTM\Application\obj\Debug\net6.0\Application.csproj.GenerateResource.cache
+D:\Code\CMCTM\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\CMCTM\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+D:\Code\CMCTM\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+D:\Code\CMCTM\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+D:\Code\CMCTM\Application\obj\Debug\net6.0\en-US\Application.resources.cs
+D:\Code\CMCTM\Application\obj\Debug\net6.0\en-US\Application.resources.dll
+D:\Code\CMCTM\Application\obj\Debug\net6.0\pt-PT\Application.resources.cs
+D:\Code\CMCTM\Application\obj\Debug\net6.0\pt-PT\Application.resources.dll
+D:\Code\CMCTM\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+D:\Code\CMCTM\Application\obj\Debug\net6.0\Application.dll
+D:\Code\CMCTM\Application\obj\Debug\net6.0\refint\Application.dll
+D:\Code\CMCTM\Application\obj\Debug\net6.0\Application.pdb
+D:\Code\CMCTM\Application\obj\Debug\net6.0\ref\Application.dll
+D:\Code\Operations\Application\bin\Debug\net6.0\Application.deps.json
+D:\Code\Operations\Application\bin\Debug\net6.0\Application.dll
+D:\Code\Operations\Application\bin\Debug\net6.0\Application.pdb
+D:\Code\Operations\Application\bin\Debug\net6.0\en-US\Application.resources.dll
+D:\Code\Operations\Application\bin\Debug\net6.0\pt-PT\Application.resources.dll
+D:\Code\Operations\Application\bin\Debug\net6.0\Domain.dll
+D:\Code\Operations\Application\bin\Debug\net6.0\Persistence.dll
+D:\Code\Operations\Application\bin\Debug\net6.0\Utility.dll
+D:\Code\Operations\Application\bin\Debug\net6.0\Domain.pdb
+D:\Code\Operations\Application\bin\Debug\net6.0\Persistence.pdb
+D:\Code\Operations\Application\bin\Debug\net6.0\Utility.pdb
+D:\Code\Operations\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+D:\Code\Operations\Application\obj\Debug\net6.0\Application.Resources.Categories.CreateCategory+CreateCategoryCommandHandler.en-US.resources
+D:\Code\Operations\Application\obj\Debug\net6.0\Application.Resources.Categories.CreateCategory+CreateCategoryCommandHandler.pt-PT.resources
+D:\Code\Operations\Application\obj\Debug\net6.0\Application.Resources.Categories.DeleteCategory+DeleteCategoryCommandHandler.en-US.resources
+D:\Code\Operations\Application\obj\Debug\net6.0\Application.Resources.Categories.DeleteCategory+DeleteCategoryCommandHandler.pt-PT.resources
+D:\Code\Operations\Application\obj\Debug\net6.0\Application.Resources.Categories.UpdateCategory+UpdateCategoryCommandHandler.en-US.resources
+D:\Code\Operations\Application\obj\Debug\net6.0\Application.Resources.Categories.UpdateCategory+UpdateCategoryCommandHandler.pt-PT.resources
+D:\Code\Operations\Application\obj\Debug\net6.0\Application.csproj.GenerateResource.cache
+D:\Code\Operations\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Operations\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+D:\Code\Operations\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+D:\Code\Operations\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+D:\Code\Operations\Application\obj\Debug\net6.0\en-US\Application.resources.cs
+D:\Code\Operations\Application\obj\Debug\net6.0\en-US\Application.resources.dll
+D:\Code\Operations\Application\obj\Debug\net6.0\pt-PT\Application.resources.cs
+D:\Code\Operations\Application\obj\Debug\net6.0\pt-PT\Application.resources.dll
+D:\Code\Operations\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+D:\Code\Operations\Application\obj\Debug\net6.0\Application.dll
+D:\Code\Operations\Application\obj\Debug\net6.0\refint\Application.dll
+D:\Code\Operations\Application\obj\Debug\net6.0\Application.pdb
+D:\Code\Operations\Application\obj\Debug\net6.0\ref\Application.dll

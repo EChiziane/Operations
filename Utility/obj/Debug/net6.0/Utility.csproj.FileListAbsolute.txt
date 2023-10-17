@@ -1,0 +1,60 @@
+D:\Projects\Gerenciador-de-Tarefas-Online\Utility\bin\Debug\net6.0\Utility.deps.json
+D:\Projects\Gerenciador-de-Tarefas-Online\Utility\bin\Debug\net6.0\Utility.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Utility\bin\Debug\net6.0\Utility.pdb
+D:\Projects\Gerenciador-de-Tarefas-Online\Utility\obj\Debug\net6.0\Utility.csproj.AssemblyReference.cache
+D:\Projects\Gerenciador-de-Tarefas-Online\Utility\obj\Debug\net6.0\Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Gerenciador-de-Tarefas-Online\Utility\obj\Debug\net6.0\Utility.AssemblyInfoInputs.cache
+D:\Projects\Gerenciador-de-Tarefas-Online\Utility\obj\Debug\net6.0\Utility.AssemblyInfo.cs
+D:\Projects\Gerenciador-de-Tarefas-Online\Utility\obj\Debug\net6.0\Utility.csproj.CoreCompileInputs.cache
+D:\Projects\Gerenciador-de-Tarefas-Online\Utility\obj\Debug\net6.0\Utility.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Utility\obj\Debug\net6.0\refint\Utility.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Utility\obj\Debug\net6.0\Utility.pdb
+D:\Projects\Gerenciador-de-Tarefas-Online\Utility\obj\Debug\net6.0\ref\Utility.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Utility\bin\Debug\net6.0\Utility.deps.json
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Utility\bin\Debug\net6.0\Utility.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Utility\bin\Debug\net6.0\Utility.pdb
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Utility\obj\Debug\net6.0\Utility.csproj.AssemblyReference.cache
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Utility\obj\Debug\net6.0\Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Utility\obj\Debug\net6.0\Utility.AssemblyInfoInputs.cache
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Utility\obj\Debug\net6.0\Utility.AssemblyInfo.cs
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Utility\obj\Debug\net6.0\Utility.csproj.CoreCompileInputs.cache
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Utility\obj\Debug\net6.0\Utility.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Utility\obj\Debug\net6.0\refint\Utility.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Utility\obj\Debug\net6.0\Utility.pdb
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Utility\obj\Debug\net6.0\ref\Utility.dll
+C:\Users\Root\RiderProjects\CMCTM\Utility\bin\Debug\net6.0\Utility.deps.json
+C:\Users\Root\RiderProjects\CMCTM\Utility\bin\Debug\net6.0\Utility.dll
+C:\Users\Root\RiderProjects\CMCTM\Utility\bin\Debug\net6.0\Utility.pdb
+C:\Users\Root\RiderProjects\CMCTM\Utility\obj\Debug\net6.0\Utility.csproj.AssemblyReference.cache
+C:\Users\Root\RiderProjects\CMCTM\Utility\obj\Debug\net6.0\Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Root\RiderProjects\CMCTM\Utility\obj\Debug\net6.0\Utility.AssemblyInfoInputs.cache
+C:\Users\Root\RiderProjects\CMCTM\Utility\obj\Debug\net6.0\Utility.AssemblyInfo.cs
+C:\Users\Root\RiderProjects\CMCTM\Utility\obj\Debug\net6.0\Utility.csproj.CoreCompileInputs.cache
+C:\Users\Root\RiderProjects\CMCTM\Utility\obj\Debug\net6.0\Utility.dll
+C:\Users\Root\RiderProjects\CMCTM\Utility\obj\Debug\net6.0\refint\Utility.dll
+C:\Users\Root\RiderProjects\CMCTM\Utility\obj\Debug\net6.0\Utility.pdb
+C:\Users\Root\RiderProjects\CMCTM\Utility\obj\Debug\net6.0\ref\Utility.dll
+D:\Code\CMCTM\Utility\bin\Debug\net6.0\Utility.deps.json
+D:\Code\CMCTM\Utility\bin\Debug\net6.0\Utility.dll
+D:\Code\CMCTM\Utility\bin\Debug\net6.0\Utility.pdb
+D:\Code\CMCTM\Utility\obj\Debug\net6.0\Utility.csproj.AssemblyReference.cache
+D:\Code\CMCTM\Utility\obj\Debug\net6.0\Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\CMCTM\Utility\obj\Debug\net6.0\Utility.AssemblyInfoInputs.cache
+D:\Code\CMCTM\Utility\obj\Debug\net6.0\Utility.AssemblyInfo.cs
+D:\Code\CMCTM\Utility\obj\Debug\net6.0\Utility.csproj.CoreCompileInputs.cache
+D:\Code\CMCTM\Utility\obj\Debug\net6.0\Utility.dll
+D:\Code\CMCTM\Utility\obj\Debug\net6.0\refint\Utility.dll
+D:\Code\CMCTM\Utility\obj\Debug\net6.0\Utility.pdb
+D:\Code\CMCTM\Utility\obj\Debug\net6.0\ref\Utility.dll
+D:\Code\Operations\Utility\bin\Debug\net6.0\Utility.deps.json
+D:\Code\Operations\Utility\bin\Debug\net6.0\Utility.dll
+D:\Code\Operations\Utility\bin\Debug\net6.0\Utility.pdb
+D:\Code\Operations\Utility\obj\Debug\net6.0\Utility.csproj.AssemblyReference.cache
+D:\Code\Operations\Utility\obj\Debug\net6.0\Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Operations\Utility\obj\Debug\net6.0\Utility.AssemblyInfoInputs.cache
+D:\Code\Operations\Utility\obj\Debug\net6.0\Utility.AssemblyInfo.cs
+D:\Code\Operations\Utility\obj\Debug\net6.0\Utility.csproj.CoreCompileInputs.cache
+D:\Code\Operations\Utility\obj\Debug\net6.0\Utility.dll
+D:\Code\Operations\Utility\obj\Debug\net6.0\refint\Utility.dll
+D:\Code\Operations\Utility\obj\Debug\net6.0\Utility.pdb
+D:\Code\Operations\Utility\obj\Debug\net6.0\ref\Utility.dll

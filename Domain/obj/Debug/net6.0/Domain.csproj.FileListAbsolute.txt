@@ -1,0 +1,60 @@
+D:\Projects\Gerenciador-de-Tarefas-Online\Domain\bin\Debug\net6.0\Domain.deps.json
+D:\Projects\Gerenciador-de-Tarefas-Online\Domain\bin\Debug\net6.0\Domain.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Domain\bin\Debug\net6.0\Domain.pdb
+D:\Projects\Gerenciador-de-Tarefas-Online\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+D:\Projects\Gerenciador-de-Tarefas-Online\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Gerenciador-de-Tarefas-Online\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+D:\Projects\Gerenciador-de-Tarefas-Online\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+D:\Projects\Gerenciador-de-Tarefas-Online\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+D:\Projects\Gerenciador-de-Tarefas-Online\Domain\obj\Debug\net6.0\Domain.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Domain\obj\Debug\net6.0\refint\Domain.dll
+D:\Projects\Gerenciador-de-Tarefas-Online\Domain\obj\Debug\net6.0\Domain.pdb
+D:\Projects\Gerenciador-de-Tarefas-Online\Domain\obj\Debug\net6.0\ref\Domain.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Domain\bin\Debug\net6.0\Domain.deps.json
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Domain\bin\Debug\net6.0\Domain.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Domain\bin\Debug\net6.0\Domain.pdb
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Domain\obj\Debug\net6.0\Domain.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Domain\obj\Debug\net6.0\refint\Domain.dll
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Domain\obj\Debug\net6.0\Domain.pdb
+D:\Codding\Back\Asp Net\Gerenciador-de-Tarefas-Online\Domain\obj\Debug\net6.0\ref\Domain.dll
+C:\Users\Root\RiderProjects\CMCTM\Domain\bin\Debug\net6.0\Domain.deps.json
+C:\Users\Root\RiderProjects\CMCTM\Domain\bin\Debug\net6.0\Domain.dll
+C:\Users\Root\RiderProjects\CMCTM\Domain\bin\Debug\net6.0\Domain.pdb
+C:\Users\Root\RiderProjects\CMCTM\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+C:\Users\Root\RiderProjects\CMCTM\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Root\RiderProjects\CMCTM\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Root\RiderProjects\CMCTM\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+C:\Users\Root\RiderProjects\CMCTM\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Root\RiderProjects\CMCTM\Domain\obj\Debug\net6.0\Domain.dll
+C:\Users\Root\RiderProjects\CMCTM\Domain\obj\Debug\net6.0\refint\Domain.dll
+C:\Users\Root\RiderProjects\CMCTM\Domain\obj\Debug\net6.0\Domain.pdb
+C:\Users\Root\RiderProjects\CMCTM\Domain\obj\Debug\net6.0\ref\Domain.dll
+D:\Code\CMCTM\Domain\bin\Debug\net6.0\Domain.deps.json
+D:\Code\CMCTM\Domain\bin\Debug\net6.0\Domain.dll
+D:\Code\CMCTM\Domain\bin\Debug\net6.0\Domain.pdb
+D:\Code\CMCTM\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+D:\Code\CMCTM\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\CMCTM\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+D:\Code\CMCTM\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+D:\Code\CMCTM\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+D:\Code\CMCTM\Domain\obj\Debug\net6.0\Domain.dll
+D:\Code\CMCTM\Domain\obj\Debug\net6.0\refint\Domain.dll
+D:\Code\CMCTM\Domain\obj\Debug\net6.0\Domain.pdb
+D:\Code\CMCTM\Domain\obj\Debug\net6.0\ref\Domain.dll
+D:\Code\Operations\Domain\bin\Debug\net6.0\Domain.deps.json
+D:\Code\Operations\Domain\bin\Debug\net6.0\Domain.dll
+D:\Code\Operations\Domain\bin\Debug\net6.0\Domain.pdb
+D:\Code\Operations\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+D:\Code\Operations\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Operations\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+D:\Code\Operations\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+D:\Code\Operations\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+D:\Code\Operations\Domain\obj\Debug\net6.0\Domain.dll
+D:\Code\Operations\Domain\obj\Debug\net6.0\refint\Domain.dll
+D:\Code\Operations\Domain\obj\Debug\net6.0\Domain.pdb
+D:\Code\Operations\Domain\obj\Debug\net6.0\ref\Domain.dll
